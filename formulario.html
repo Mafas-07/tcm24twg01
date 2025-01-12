@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Opiniões</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Opiniões</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="formulario.html">Deixe sua Opinião</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Deixe sua Opinião</h2>
+            <form action="#" method="post">
+                <label for="nome">Seu Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="restaurante">Nome do Restaurante:</label><br>
+                <input type="text" id="restaurante" name="restaurante" required><br><br>
+
+                <label for="opiniao">Sua Opinião:</label><br>
+                <textarea id="opiniao" name="opiniao" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="avaliacao">Avaliação (1 a 5):</label><br>
+                <select id="avaliacao" name="avaliacao" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br><br>
+
+                <label for="comentario_site">Comentário sobre o site:</label><br>
+                <textarea id="comentario_site" name="comentario_site" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar Opinião">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Eat Around</p>
+    </footer>
+</body>
+</html>
