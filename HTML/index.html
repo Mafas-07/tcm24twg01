@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat Around - Discover Amazing Restaurants</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
+      <a href="../HTML/formulario.html">Deixe sua Opinião</a>
+      <nav>
+        <a href="../HTML/login.html" class="login-btn">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Discover and book the best restaurants</h2>
+        <form class="search-bar">
+          <input
+            type="text"
+            placeholder="Search for a restaurant or cuisine..."
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+        <div class="country-links">
+          <a href="../HTML/restaurante_portugal.html">Portugal</a>
+          <a href="../HTML/restaurante_espanha.html">Espanha</a>
+          <a href="../HTML/restaurante_inglaterra.html">Inglaterra</a>
+          <a href="../HTML/restaurante_alemanha.html">Alemanha</a>
+        </div>
+      </section>
+
+      <section class="popular-restaurants">
+        <h2>Popular Restaurants in Lisbon</h2>
+        <div class="restaurant-list">
+          <div class="restaurant-item">
+            <a href="../HTML/marlene.html">
+              <img
+                src="../IMAGENS/restaurant1.jpg"
+                alt="Restaurant 1"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Marlene</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/ato_gastronomico.html">
+              <img
+                src="../IMAGENS/restaurant2.jpg"
+                alt="Restaurant 2"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Ato Gastronomico</p>
+          </div>
+        </div>
+        <h2>Popular Restaurants in Porto</h2>
+        <div class="restaurant-list">
+          <div class="restaurant-item">
+            <a href="../HTML/liz.html">
+              <img
+                src="../IMAGENS/restaurant3.jpg"
+                alt="Restaurant 3"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Liz</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/loureiro.html">
+              <img
+                src="../IMAGENS/restaurant4.jpg"
+                alt="Restaurant 4"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>O Loureiro</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
+    </footer>
+
+    <script>
+      // Função para a barra de pesquisa
+      document
+        .querySelector(".search-bar")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Impede o envio do formulário
+          const query = this.querySelector("input").value.toLowerCase().trim(); // Obtém o valor da pesquisa e converte para minúsculas
+
+          // Verifica o valor da pesquisa e redireciona para a página correspondente
+          if (query === "marlene") {
+            window.location.href = "../HTML/marlene.html";
+          } else if (query === "ato gastronomico") {
+            window.location.href = "../HTML/ato_gastronomico.html";
+          } else if (query === "ze do cozido" || query === "Zé do cozido") {
+            window.location.href = "../HTML/ze.html";
+          } else if (query === "liz") {
+            window.location.href = "../HTML/liz.html";
+          } else if (query === "loureiro") {
+            window.location.href = "../HTML/loureiro.html";
+          } else if (query === "ladecasa" || query === "LádeCasa") {
+            window.location.href = "../HTML/ladecasa.html";
+          } else if (query === "inevitavel") {
+            window.location.href = "../HTML/inevitavel.html";
+          } else if (query === "charneco" || query === "O charneco") {
+            window.location.href = "../HTML/charneco.html";
+          } else if (query === "loki") {
+            window.location.href = "../HTML/loki.html";
+          } else if (query === "lisboa") {
+            window.location.href = "../HTML/restaurante_lisboa.html";
+          } else if (query === "porto") {
+            // Verifique se está em minúsculas
+            window.location.href = "../HTML/restaurante_porto.html";
+          } else if (query === "algarve") {
+            window.location.href = "../HTML/restaurante_algarve.html";
+          } else if (query === "portugal") {
+            window.location.href = "../HTML/restaurante_portugal.html";
+          } else if (
+            query === "la cuadra" ||
+            query === "la cuadra de salvador" ||
+            query === "cuadra"
+          ) {
+            window.location.href = "../HTML/cuadra.html";
+          } else if (query === "alborz") {
+            window.location.href = "../HTML/alborz.html";
+          } else if (query === "desborre") {
+            window.location.href = "../HTML/desborre.html";
+          } else if (query === "madrid") {
+            window.location.href = "../HTML/restaurante_madrid.html";
+          } else if (query === "zaytun") {
+            window.location.href = "../HTML/zaytun.html";
+          } else if (query === "birika") {
+            window.location.href = "../HTML/birika.html";
+          } else if (query === "alchemix") {
+            window.location.href = "../HTML/alchemix.html";
+          } else if (query === "barcelona") {
+            window.location.href = "../HTML/restaurante_barcelona.html";
+          } else if (query === "mokambo") {
+            window.location.href = "../HTML/mokambo.html";
+          } else if (query === "abantal") {
+            window.location.href = "../HTML/abantal.html";
+          } else if (
+            query === "maestria" ||
+            query === "la maestria" ||
+            query === "la maestria de querencia"
+          ) {
+            window.location.href = "../HTML/maestria.html";
+          } else if (query === "sevilha" || query === "sevilla") {
+            window.location.href = "../HTML/restaurante_sevilha.html";
+          } else if (query === "espanha") {
+            window.location.href = "../HTML/restaurante_espanha.html";
+          } else if (query === "muse") {
+            window.location.href = "../HTML/muse.html";
+          } else if (query === "bolu") {
+            window.location.href = "../HTML/bolu.html";
+          } else if (
+            query === "whittington stone" ||
+            query === "stone" ||
+            query === "whittington"
+          ) {
+            window.location.href = "../HTML/stone.html";
+          } else if (query === "londres") {
+            window.location.href = "../HTML/restaurante_londres.html";
+          } else if (
+            query === "miller & carter" ||
+            query === "miller e carter" ||
+            query === "miller"
+          ) {
+            window.location.href = "../HTML/miller.html";
+          } else if (
+            query === "ohannes" ||
+            query === "ohannes burger salford" ||
+            query === "ohannes burger"
+          ) {
+            window.location.href = "../HTML/ohannes.html";
+          } else if (query === "dakota") {
+            window.location.href = "../HTML/dakota.html";
+          } else if (query === "manchester") {
+            window.location.href = "../HTML/restaurante_manchester.html";
+          } else if (
+            query === "pizza" ||
+            query === "Pizza triangle" ||
+            query === "Pizza triangle nottingham"
+          ) {
+            window.location.href = "../HTML/pizza.html";
+          } else if (
+            query === "lovage" ||
+            query === "lovage by lee Smith" ||
+            query === "lovage by lee smith"
+          ) {
+            window.location.href = "../HTML/lovage.html";
+          } else if (query === "lasani") {
+            window.location.href = "../HTML/lasani.html";
+          } else if (query === "nottingham") {
+            window.location.href = "../HTML/restaurante_nottingham.html";
+          } else if (query === "inglaterra") {
+            window.location.href = "../HTML/restaurante_inglaterra.html";
+          } else if (query === "oukan") {
+            window.location.href = "../HTML/oukan.html";
+          } else if (query === "il cielo" || query === "cielo") {
+            window.location.href = "../HTML/cielo.html";
+          } else if (query === "wilde wiese" || query === "wilde") {
+            window.location.href = "../HTML/wilde.html";
+          } else if (query === "berlim" || query === "berlin") {
+            window.location.href = "../HTML/restaurante_berlim.html";
+          } else if (query === "daje munchen" || query === "daje") {
+            window.location.href = "../HTML/daje.html";
+          } else if (
+            query === "freisinger hof" ||
+            query === "hof" ||
+            query === "freisinger"
+          ) {
+            window.location.href = "../HTML/hof.html";
+          } else if (
+            query === "munique" ||
+            query === "munich" ||
+            query === "munchen"
+          ) {
+            window.location.href = "../HTML/restaurante_munique.html";
+          } else if (
+            query === "pizza Verde Neuhausen" ||
+            query === "pizza Verde" ||
+            query === "verde"
+          ) {
+            window.location.href = "../HTML/verde.html";
+          } else if (query === "kraft" || query === "kraftwerk") {
+            window.location.href = "../HTML/kraft.html";
+          } else if (query === "uzuns") {
+            window.location.href = "../HTML/uzuns.html";
+          } else if (query === "dun liban" || query === "liban") {
+            window.location.href = "../HTML/liban.html";
+          } else if (query === "frankfurt") {
+            window.location.href = "../HTML/restaurante_frankfurt.html";
+          } else if (query === "alemanha") {
+            window.location.href = "restaurante_alemanha";
+          } else {
+            alert("Restaurante não encontrado.");
+          }
+        });
+    </script>
+  </body>
+</html>
