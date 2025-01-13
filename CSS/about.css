@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-/* Header styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -83,46 +83,46 @@ header .deixe-opiniao {
     margin-right: 1em;
 }
 
-/* Estilo para a caixa centralizada */
+
 .main-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Para centralizar verticalmente */
+    min-height: 80vh; 
     padding: 4em 2em;
     background-color: #f9f9f9;
 }
 
-/* Box centralizada */
+
 .story {
     width: 100%;
-    max-width: 1000px; /* Largura máxima de 1000px */
+    max-width: 1000px; 
     padding: 2em;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Mudando o texto para a esquerda para melhor leitura */
-    margin: 0 auto; /* Garante que a caixa esteja centralizada */
+    text-align: left; 
+    margin: 0 auto; 
     line-height: 1.8;
 }
 
-/* Título da história */
+
 .story h2 {
     font-size: 2.8em;
     font-weight: bold;
     color: #3a7267;
     margin-bottom: 1.5em;
-    text-align: center; /* Centraliza o título */
+    text-align: center; 
 }
 
-/* Parágrafos dentro da história */
+
 .story p {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 1.5em;
 }
 
-/* Footer styles */
+
 footer {
     text-align: center;
     padding: 2em 0;
