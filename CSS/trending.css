@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #bdf6f8;
+    color: #fff;
+    padding: 1.5em 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 3em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav a {
+    color: #3a7267;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header .login-btn {
+    background: #fff;
+    color: #3a7267;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .login-btn:hover {
+    background: #3a7267;
+    color: #fff;
+}
+
+header .deixe-opiniao {
+    margin-right: 1em;
+}
+
+
+main {
+    padding: 2em 1em;
+}
+
+
+.restaurant-table {
+    width: 100%;
+    margin-top: 2em;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.restaurant-table th, .restaurant-table td {
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+.restaurant-table th {
+    background-color: #3a7267;
+    color: #fff;
+}
+
+.restaurant-table td a {
+    color: #3a7267;
+    text-decoration: none;
+}
+
+.restaurant-table td a:hover {
+    text-decoration: underline;
+}
+
+
+.restaurant-info {
+    margin-top: 3em;
+    text-align: left;
+    background: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-info h3 {
+    font-size: 1.8em;
+    color: #3a7267;
+    margin-bottom: 1em;
+}
+
+.restaurant-info dl {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.restaurant-info dt {
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #bdf6f8;
+    color: #3a7267;
+}
+
+footer nav {
+    margin-top: 1em;
+}
+
+footer a {
+    color: #3a7267;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
