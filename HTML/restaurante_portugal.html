@@ -38,17 +38,17 @@
         <label for="preco">Preço:</label>
         <select id="preco">
           <option value="todos">Todos</option>
-          <option value="baixo">Preço Baixo</option>
-          <option value="médio">Preço Médio</option>
-          <option value="alto">Preço Alto</option>
+          <option value="Baixo">Preço Baixo</option>
+          <option value="Médio">Preço Médio</option>
+          <option value="Alto">Preço Alto</option>
         </select>
 
         <label for="pontuacao">Pontuação:</label>
         <select id="pontuacao">
           <option value="todas">Todas</option>
-          <option value="baixa">Baixa</option>
-          <option value="média">Média</option>
-          <option value="alta">Alta</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Mlta">Alta</option>
         </select>
       </section>
 
@@ -145,7 +145,7 @@
 
       function renderRestaurantes(lista) {
         const container = document.getElementById("restaurantes-lista");
-        container.innerHTML = ""; // Limpa a lista existente
+        container.innerHTML = "";
 
         lista.forEach((restaurante) => {
           const itemHTML = `

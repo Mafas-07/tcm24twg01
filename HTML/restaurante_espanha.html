@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes de Portugal</title>
+    <link rel="stylesheet" href="../CSS/restaurantespaises.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Início</a></li>
+          <li><a href="../HTML/about.html">Sobre</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
+          <li><a href="../HTML/reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <h1>Restaurantes de Espanha</h1>
+
+      <section class="filters">
+        <h2>Filtros</h2>
+        <label for="localizacao">Localização:</label>
+        <select id="localizacao">
+          <option value="todos">Todos</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Sevilla">Sevilla</option>
+        </select>
+
+        <label for="preco">Preço:</label>
+        <select id="preco">
+          <option value="todos">Todos</option>
+          <option value="Baixo">Preço Baixo</option>
+          <option value="Médio">Preço Médio</option>
+          <option value="Alto">Preço Alto</option>
+        </select>
+
+        <label for="pontuacao">Pontuação:</label>
+        <select id="pontuacao">
+          <option value="todas">Todas</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Lista de Restaurantes</h2>
+        <div id="restaurantes-lista"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
+    </footer>
+
+    <script>
+      const restaurantes = [
+        {
+          nome: "La Cuadra de Salvador",
+          imagem: "../IMAGENS/cuadra5.jpg",
+          localizacao: "Madrid",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/cuadra.html",
+        },
+        {
+          nome: "Alborz",
+          imagem: "../IMAGENS/alborz1.jpg",
+          localizacao: "Madrid",
+          preco: "Médio",
+          pontuacao: "Média",
+          link: "../HTML/alborz.html",
+        },
+        {
+          nome: "Desborre",
+          imagem: "../IMAGENS/desborre6.jpg",
+          localizacao: "Madrid",
+          preco: "Médio",
+          pontuacao: "Alta",
+          link: "../HTML/desborre.html",
+        },
+        {
+          nome: "Zaytun",
+          imagem: "../IMAGENS/zaytun4.jpg",
+          localizacao: "Barcelona",
+          preco: "Médio",
+          pontuacao: "Alta",
+          link: "../HTML/zaytun.html",
+        },
+        {
+          nome: "Birika",
+          imagem: "../IMAGENS/birika5.jpg",
+          localizacao: "Barcelona",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/birika.html",
+        },
+        {
+          nome: "The Alchemix - gastro cocktail bar",
+          imagem: "../IMAGENS/alchemix2.jpg",
+          localizacao: "Barcelona",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/alchemix.html",
+        },
+        {
+          nome: "Mokambo - Breakfast & Brunch",
+          imagem: "../IMAGENS/mokambo8.jpg",
+          localizacao: "Sevilla",
+          preco: "Baixo",
+          pontuacao: "Média",
+          link: "../HTML/mokambo.html",
+        },
+        {
+          nome: "La maestria de querencia",
+          imagem: "../IMAGENS/maestria6.jpg",
+          localizacao: "Sevilla",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/maestria.html",
+        },
+        {
+          nome: "Abantal",
+          imagem: "../IMAGENS/abantal1.jpg",
+          localizacao: "Sevilla",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/abantal.html",
+        },
+      ];
+
+      function renderRestaurantes(lista) {
+        const container = document.getElementById("restaurantes-lista");
+        container.innerHTML = ""; 
+
+        lista.forEach((restaurante) => {
+          const itemHTML = `
+            <div class="restaurant-item">
+              <a href="${restaurante.link}">
+                <img src="${restaurante.imagem}" alt="${restaurante.nome}" width="200" height="150">
+              </a>
+              <p>${restaurante.nome}</p>
+            </div>
+          `;
+          container.innerHTML += itemHTML;
+        });
+      }
+
+      function filtrarRestaurantes() {
+        const localizacao = document.getElementById("localizacao").value;
+        const preco = document.getElementById("preco").value;
+        const pontuacao = document.getElementById("pontuacao").value;
+
+        const filtrados = restaurantes.filter((restaurante) => {
+          return (
+            (localizacao === "todos" ||
+              restaurante.localizacao === localizacao) &&
+            (preco === "todos" || restaurante.preco === preco) &&
+            (pontuacao === "todas" || restaurante.pontuacao === pontuacao)
+          );
+        });
+
+        renderRestaurantes(filtrados);
+      }
+
+      document
+        .getElementById("localizacao")
+        .addEventListener("change", filtrarRestaurantes);
+      document
+        .getElementById("preco")
+        .addEventListener("change", filtrarRestaurantes);
+      document
+        .getElementById("pontuacao")
+        .addEventListener("change", filtrarRestaurantes);
+
+      renderRestaurantes(restaurantes);
+    </script>
+  </body>
+</html>
