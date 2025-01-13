@@ -1,0 +1,209 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center; /* Centraliza o texto de forma geral */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #bdf6f8;
+    color: #fff;
+    padding: 1.5em 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 3em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav a {
+    color: #3a7267;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header .login-btn {
+    background: #fff;
+    color: #3a7267;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .login-btn:hover {
+    background: #3a7267;
+    color: #fff;
+}
+
+header .deixe-opiniao {
+    margin-right: 1em;
+}
+
+
+.restaurantes-pais {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #3a7267;
+    margin-bottom: 0.8em; 
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+
+.section-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333; /* Preto */
+    margin-bottom: 1em;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: #3a7267;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
+
+.popular-restaurants {
+    padding: 4em 2em;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.titles {
+    margin-bottom: 3em;
+}
+
+.titles h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.restaurant-item {
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+.restaurant-item:hover {
+    transform: translateY(-10px);
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.2em;
+}
+
+.restaurant-item p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5em;
+    }
+
+    header .logo {
+        width: 120px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .restaurant-list {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #bdf6f8;
+    color: #3a7267;
+}
+
+footer nav {
+    margin-top: 1em;
+}
+
+footer a {
+    color: #3a7267;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
