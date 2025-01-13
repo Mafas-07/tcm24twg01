@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registe o seu restaurante</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Registe o seu restaurante</h1>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Início</a></li>
+          <li><a href="../HTML/about.html">Sobre</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/formulario.html">Registe o seu restaurante</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Atraia novos clientes ao seu restaurante</h2>
+        <h3>Quer aumentar as receitas do seu restaurante e otimizar a sua atividade?
+          Comece a obter mais reservas de clientes das proximidades e de todo o mundo.</h3>
+        <form action="#" method="post">
+          <label for="nome">Seu Nome:</label><br />
+          <input type="text" id="nome" name="nome" required /><br /><br />
+
+          <label for="restaurante">Nome do Restaurante:</label><br />
+          <input type="text" id="restaurante" name="restaurante" required /><br /><br />
+
+          <label for="e-mail">E-mail:</label><br />
+          <input type="text" id="e-mail" name="e-mail" required /><br /><br />
+
+          <label for="phone">Número de telefone</label>
+          <select id="country-code" name="country-code" required>
+            <option value="PT">PT +351</option>
+          </select>
+
+          <input type="tel" id="phone" name="phone" required>
+
+          <label>
+            <input type="checkbox" name="opt-out"> Não desejo receber comunicações do Eat Around por e-mail/SMS.
+          </label>
+
+          <input type="submit" value="Registo" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Eat Around</p>
+    </footer>
+  </body>
+</html>
 
