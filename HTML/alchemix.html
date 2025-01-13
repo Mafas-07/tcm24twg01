@@ -19,62 +19,88 @@
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Deixe sua Opinião</a>
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
-    <main>
-      <section>
-        <h2>Descrição</h2>
-        <p>Um ótimo lugar para jantar com amigos em Barcelona.</p>
-        <div class="carousel">
-          <div class="carousel-images" id="carouselImages">
-            <img src="../IMAGENS/alchemix1.jpg" alt="Alchemix - Imagem 1" />
-            <img src="../IMAGENS/alchemix2.jpg" alt="Alchemix- Imagem 2" />
-            <img src="../IMAGENS/alchemix3.jpg" alt="Alchemix - Imagem 3" />
-            <img src="../IMAGENS/alchemix4.jpg" alt="Alchemix - Imagem 4" />
-            <img src="../IMAGENS/alchemix5.jpg" alt="Alchemix - Imagem 5" />
-            <img src="../IMAGENS/alchemix6.jpg" alt="Alchemix - Imagem 6" />
-            <img src="../IMAGENS/alchemix7.jpg" alt="Alchemix - Imagem 7" />
+    <div class="conteudo">
+      <main>
+        <section class="restaurant-info">
+          <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+              <img src="../IMAGENS/alchemix1.jpg" alt="Alchemix - Imagem 1" />
+              <img src="../IMAGENS/alchemix2.jpg" alt="Alchemix- Imagem 2" />
+              <img src="../IMAGENS/alchemix3.jpg" alt="Alchemix - Imagem 3" />
+              <img src="../IMAGENS/alchemix4.jpg" alt="Alchemix - Imagem 4" />
+              <img src="../IMAGENS/alchemix5.jpg" alt="Alchemix - Imagem 5" />
+              <img src="../IMAGENS/alchemix6.jpg" alt="Alchemix - Imagem 6" />
+              <img src="../IMAGENS/alchemix7.jpg" alt="Alchemix - Imagem 7" />
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+            <button class="carousel-button next" onclick="moveSlide(1)">
+              &#10095;
+            </button>
           </div>
-          <button class="carousel-button prev" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="carousel-button next" onclick="moveSlide(1)">
-            &#10095;
-          </button>
-        </div>
-        <h2>Localização</h2>
-        <p>Localização: Carrer de València, 212, 08011 Barcelona</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.3749169555003!2d2.156417775918475!3d41.389275071299565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28e6f9679f3%3A0x4a4317f21584757f!2sThe%20Alchemix!5e1!3m2!1spt-PT!2sus!4v1736679840223!5m2!1spt-PT!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-      <section>
-        <h2>Faça sua Reserva</h2>
-        <form id="reservaForm">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
-
-          <label for="data">Data:</label>
-          <input type="date" id="data" name="data" required />
-
-          <label for="hora">Hora:</label>
-          <input type="time" id="hora" name="hora" required />
-
-          <label for="pessoas">Número de Pessoas:</label>
-          <input type="number" id="pessoas" name="pessoas" min="1" required />
-
-          <button type="submit">Reservar</button>
-        </form>
-      </section>
-    </main>
+          <div class="restaurant-description">
+            <h2>The Alchemix</h2>
+            <p>Um ótimo lugar para jantar com amigos em Barcelona.</p>
+            <p><strong>Classificação:</strong> 4.7/5</p>
+            <p><strong>Preço médio:</strong> 35€ por pessoa</p>
+            <p><strong>Tipo de Comida:</strong> Gastro Bar</p>
+            <p>
+              <strong>Endereço:</strong> Carrer de València, 212, 08011
+              Barcelona
+            </p>
+          </div>
+        </section>
+        <section class="location-reservation">
+          <div class="location">
+            <h2>Localização</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.3749169555003!2d2.156417775918475!3d41.389275071299565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28e6f9679f3%3A0x4a4317f21584757f!2sThe%20Alchemix!5e1!3m2!1spt-PT!2sus!4v1736679840223!5m2!1spt-PT!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="reservation">
+            <h2>Faça sua Reserva</h2>
+          <form id="reservaForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+  
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required />
+  
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required />
+  
+            <label for="pessoas">Número de Pessoas:</label>
+            <input 
+              type="number" 
+              id="pessoas" 
+              name="pessoas" 
+              min="1" 
+              required 
+              />
+  
+            <button type="submit">Reservar</button>
+          </form>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer>
-      <address>
-        Contato: <a href="e-mail:eataround@gmail.com">eataround@gmail.com</a>
-      </address>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
 
     <script>
