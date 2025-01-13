@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/restauranteindividual.css" />
+    <title>Ohannes Burger Salford - Restaurante</title>
+  </head>
+  <body>
+    <header>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Início</a></li>
+          <li><a href="../HTML/about.html">Sobre</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
+          <li><a href="../HTML/reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Deixe sua Opinião</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
+    </header>
+
+    <div class="conteudo">
+      <main>
+        <section class="restaurant-info">
+          
+          <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+              <img src="../IMAGENS/ohannes1.jpg" alt="Ohannes - Imagem 1" />
+              <img src="../IMAGENS/ohannes2.jpg" alt="Ohannes - Imagem 2" />
+              <img src="../IMAGENS/ohannes3.jpg" alt="Ohannes - Imagem 3" />
+              <img src="../IMAGENS/ohannes4.jpg" alt="Ohannes - Imagem 4" />
+              <img src="../IMAGENS/ohannes5.jpg" alt="Ohannes - Imagem 5" />
+              <img src="../IMAGENS/ohannes6.jpg" alt="Ohannes - Imagem 6" />
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+            <button class="carousel-button next" onclick="moveSlide(1)">
+              &#10095;
+            </button>
+          </div>
+
+          
+          <div class="restaurant-description">
+            <h2>Ohannes Burger Salford</h2>
+            <p>
+              Um ótimo lugar para jantar com amigos em Manchester. Oferecemos
+              deliciosos hambúrgueres e batatas fritas, perfeitos para quem ama
+              um bom fast food.
+            </p>
+            <p><strong>Classificação:</strong> 4.6/5</p>
+            <p><strong>Preço médio:</strong> 20£ por pessoa</p>
+            <p><strong>Tipo de Comida:</strong> Fast Food, Hambúrgueres</p>
+            <p><strong>Endereço:</strong> 104 Chapel Street, M3 5DW Salford</p>
+          </div>
+        </section>
+
+      
+        <section class="location-reservation">
+          <!-- Mapa de localização -->
+          <div class="location">
+            <h2>Localização</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d142.58515599106283!2d-2.252259435192306!3d53.484528572329694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb11cf6fbfcad%3A0x688dc3fe2cfdc788!2sOhannes%20Burger%20Salford!5e1!3m2!1spt-PT!2sus!4v1736690837723!5m2!1spt-PT!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+
+         
+          <div class="reservation">
+            <h2>Faça sua Reserva</h2>
+            <form id="reservaForm">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required />
+
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora" required />
+
+              <label for="pessoas">Número de Pessoas:</label>
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                required
+              />
+
+              <button type="submit">Reservar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
+    </footer>
+
+    <script>
+      let currentSlide = 0;
+
+      function moveSlide(direction) {
+        const slides = document.querySelectorAll("#carouselImages img");
+        currentSlide =
+          (currentSlide + direction + slides.length) % slides.length;
+        const offset = -currentSlide * 100; // Move para a esquerda
+        document.getElementById(
+          "carouselImages"
+        ).style.transform = `translateX(${offset}%)`;
+      }
+    </script>
+  </body>
+</html>
 
