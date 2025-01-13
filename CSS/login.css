@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -16,10 +16,10 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o rodapé fique no fim da página */
+    min-height: 100vh; 
 }
 
-/* Cabeçalho */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -122,13 +122,13 @@ header .deixe-opiniao {
     font-size: 1.2em;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 1.2em; /* Espaçamento entre os campos */
+    margin-bottom: 1.2em; 
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .input-container input:focus {
     outline: none;
-    border-color: #3a7267; /* Cor do campo ao focar */
+    border-color: #3a7267; 
     box-shadow: 0 0 5px rgba(58, 114, 103, 0.5);
 }
 
@@ -167,7 +167,7 @@ footer {
     padding: 2em 0;
     background: #bdf6f8;
     color: #3a7267;
-    margin-top: auto; /* Garante que o rodapé vá para o final da página */
+    margin-top: auto; 
 }
 
 footer nav {
@@ -186,7 +186,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
