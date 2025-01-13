@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/styles.css" />
     <title>Marlene - Restaurante</title> 
+    <style>
+      .carousel {
+        position: relative;
+        max-widht: 600px;
+        margin: auto;
+        overflow: hidden;
+      }
+      .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .carousel-images img {
+        width: 100%;
+        height: auto;
+      }
+      .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px
+      }
+    </style>
   </head>
   <body>
     <header>
