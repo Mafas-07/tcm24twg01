@@ -105,21 +105,8 @@
     </main>
     <footer>
       <address>
-        Contato: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+        Contato: <a href="e-mail:eataround@gmail.com">eataround@gmail.com</a>
       </address>
     </footer>
-    <script>
-      let currentSlide = 0;
-
-      function moveSlide(direction) {
-        const slides = document.querySelectorAll("#carouselImages img");
-        currentSlide =
-          (currentSlide + direction + slides.length) % slides.length;
-        const offset = -currentSlide * 100; 
-        document.getElementById(
-          "carouselImages"
-        ).style.transform = `translateX(${offset}%)`;
-      }
-    </script>
   </body>
 </html>
