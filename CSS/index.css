@@ -1,4 +1,4 @@
-/* Body styles */
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Header styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,12 +24,12 @@ header .logo {
     height: auto;
 }
 
-/* Menu styles */
+
 header nav {
     display: flex;
-    justify-content: flex-start; /* Alinha o menu à esquerda */
+    justify-content: flex-start;
     flex-grow: 1;
-    margin-left: 3em; /* Empurra o menu para a direita */
+    margin-left: 3em; 
 }
 
 header nav ul {
@@ -72,12 +72,11 @@ header .login-btn:hover {
     color: #fff;
 }
 
-/* Modificação para afastar o botão "Deixe sua Opinião" do botão de Login */
-header .deixe-opiniao {
-    margin-right: 1em; /* Afastando um pouco o botão */
-}
 
-/* Hero section styles */
+header .deixe-opiniao {
+    margin-right: 1em; 
+
+
 .hero {
     text-align: center;
     padding: 4em 2em;
@@ -128,7 +127,7 @@ header .deixe-opiniao {
     color: #3a7267;
 }
 
-/* Country links styles */
+
 .country-links {
     margin-top: 2em;
     display: flex;
@@ -147,7 +146,7 @@ header .deixe-opiniao {
     color:#bdf6f8;
 }
 
-/* Popular restaurants section styles */
+
 .popular-restaurants {
     padding: 4em 2em;
     background: #f9f9f9;
@@ -199,7 +198,7 @@ header .deixe-opiniao {
     font-size: 1.2em;
     color: #333;
 }
-/* Corpo da página com margens laterais */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -209,7 +208,7 @@ body {
     color: #333;
 }
 
-/* Header styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -225,12 +224,12 @@ header .logo {
     height: auto;
 }
 
-/* Menu styles */
+
 header nav {
     display: flex;
-    justify-content: flex-start; /* Alinha o menu à esquerda */
+    justify-content: flex-start; 
     flex-grow: 1;
-    margin-left: 3em; /* Empurra o menu para a direita */
+    margin-left: 3em; 
 }
 
 header nav ul {
@@ -273,9 +272,9 @@ header .login-btn:hover {
     color: #fff;
 }
 
-/* Modificação para afastar o botão "Deixe sua Opinião" do botão de Login */
+
 header .deixe-opiniao {
-    margin-right: 1em; /* Afastando um pouco o botão */
+    margin-right: 1em; 
 }
 
 /* Responsividade */
@@ -301,7 +300,6 @@ header .deixe-opiniao {
     }
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     padding: 2em 0;
