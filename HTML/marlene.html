@@ -7,5 +7,88 @@
     <title>Marlene - Restaurante</title> 
   </head>
   <body>
-    >
+    <header>
+      <h1>Marlene</h1>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Início</a></li>
+          <li><a href="../HTML/about.html">Sobre</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Descrição</h2>
+        <p>Um ótimo lugar para jantar com amigos em Lisboa.</p>
+        <div class="carousel">
+          <div class="carousel-images" id="carouselImages">
+            <img src="../IMAGENS/marlene1.jpg" alt="Marlene - Imagem 1" />
+            <img src="../IMAGENS/marlene2.jpg" alt="Marlene - Imagem 2" />
+            <img src="../IMAGENS/marlene3.jpg" alt="Marlene - Imagem 3" />
+            <img src="../IMAGENS/marlene4.jpg" alt="Marlene - Imagem 4" />
+            <img src="../IMAGENS/marlene5.jpg" alt="Marlene - Imagem 5" />
+            <img src="../IMAGENS/marlene6.jpg" alt="Marlene - Imagem 6" />
+            <img src="../IMAGENS/marlene7.jpg" alt="Marlene - Imagem 7" />
+            <img src="../IMAGENS/marlene8.jpg" alt="Marlene - Imagem 8" />
+            <img src="../IMAGENS/marlene9.jpg" alt="Marlene - Imagem 9" />
+            <img src="../IMAGENS/marlene10.jpg" alt="Marlene - Imagem 10" />
+          </div>
+          <button class="carousel-button prev" onclick="moveSlide(-1)">
+            &#10094;
+          </button>
+          <button class="carousel-button next" onclick="moveSlide(1)">
+            &#10095;
+          </button>
+        </div>
+        <h2>Localização</h2>
+        <p>Localização: Av. Infante Dom Henrique, 1100-651, Lisboa</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.660262295227!2d-9.126717624218998!3d38.71155297176427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193475208522eb%3A0x5762b5bbde40e0fd!2sMarlene%2C!5e1!3m2!1spt-PT!2spt!4v1736629079833!5m2!1spt-PT!2spt"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+      <section>
+        <h2>Faça sua Reserva</h2>
+        <form id="reservaForm">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="data">Data:</label>
+          <input type="date" id="data" name="data" required />
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="pessoas">Número de Pessoas:</label>
+          <input type="number" id="pessoas" name="pessoas" min="1" required />
+
+          <button type="submit">Reservar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <address>
+        Contato: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+      </address>
+    </footer>
+    <script>
+      let currentSlide = 0;
+
+      function moveSlide(direction) {
+        const slides = document.querySelectorAll("#carouselImages img");
+        currentSlide =
+          (currentSlide + direction + slides.length) % slides.length;
+        const offset = -currentSlide * 100; 
+        document.getElementById(
+          "carouselImages"
+        ).style.transform = `translateX(${offset}%)`;
+      }
+    </script>
   </body>
+</html>
