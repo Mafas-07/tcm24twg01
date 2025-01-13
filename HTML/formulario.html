@@ -4,31 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registe o seu restaurante</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/reservas.css" />
   </head>
   <body>
     <header>
-      <h1>Registe o seu restaurante</h1>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
       <nav>
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
           <li><a href="../HTML/about.html">Sobre</a></li>
-          <li><a href="../HTML/services.html">Serviços</a></li>
-          <li><a href="../HTML/formulario.html">Registe o seu restaurante</a></li>
+          <li><a href="../HTML/trending.html">Trending</a></li>
+          <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Registe o seu Restaurante</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
     <main>
       <section>
         <h2>Atraia novos clientes ao seu restaurante</h2>
-        <h3>Quer aumentar as receitas do seu restaurante e otimizar a sua atividade?
-          Comece a obter mais reservas de clientes das proximidades e de todo o mundo.</h3>
+        <h3>
+          Quer aumentar as receitas do seu restaurante e otimizar a sua
+          atividade? Comece a obter mais reservas de clientes das proximidades e
+          de todo o mundo.
+        </h3>
         <form action="#" method="post">
           <label for="nome">Seu Nome:</label><br />
           <input type="text" id="nome" name="nome" required /><br /><br />
 
           <label for="restaurante">Nome do Restaurante:</label><br />
-          <input type="text" id="restaurante" name="restaurante" required /><br /><br />
+          <input
+            type="text"
+            id="restaurante"
+            name="restaurante"
+            required
+          /><br /><br />
 
           <label for="e-mail">E-mail:</label><br />
           <input type="text" id="e-mail" name="e-mail" required /><br /><br />
@@ -42,10 +56,11 @@
             <option value="+33">França +33</option>
           </select>
 
-          <input type="tel" id="phone" name="phone" required>
+          <input type="tel" id="phone" name="phone" required />
 
           <label>
-            <input type="checkbox" name="opt-out"> Não desejo receber comunicações do Eat Around por e-mail/SMS.
+            <input type="checkbox" name="opt-out" /> Não desejo receber
+            comunicações do Eat Around por e-mail/SMS.
           </label>
 
           <input type="submit" value="Registo" />
@@ -54,6 +69,11 @@
     </main>
     <footer>
       <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
   </body>
 </html>
