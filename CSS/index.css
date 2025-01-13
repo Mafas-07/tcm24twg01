@@ -1,0 +1,326 @@
+/* Body styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #bdf6f8;
+    color: #fff;
+    padding: 1.5em 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Menu styles */
+header nav {
+    display: flex;
+    justify-content: flex-start; /* Alinha o menu à esquerda */
+    flex-grow: 1;
+    margin-left: 3em; /* Empurra o menu para a direita */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav a {
+    color: #3a7267;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header .login-btn {
+    background: #fff;
+    color: #3a7267;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .login-btn:hover {
+    background: #3a7267;
+    color: #fff;
+}
+
+/* Modificação para afastar o botão "Deixe sua Opinião" do botão de Login */
+header .deixe-opiniao {
+    margin-right: 1em; /* Afastando um pouco o botão */
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: #3a7267;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+    margin-top: 1.5em;
+}
+
+.search-bar input {
+    padding: 1em;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1.1em;
+    transition: border 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #bdf6f8;
+}
+
+.search-bar button {
+    padding: 1em 1.5em;
+    background: #fff;
+    color: #3a7267;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.search-bar button:hover {
+    background: #bdf6f8;
+    color: #3a7267;
+}
+
+/* Country links styles */
+.country-links {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.country-links a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.country-links a:hover {
+    color:#bdf6f8;
+}
+
+/* Popular restaurants section styles */
+.popular-restaurants {
+    padding: 4em 2em;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.titles h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.restaurant-item {
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+.restaurant-item:hover {
+    transform: translateY(-10px);
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 200px; /* Menor altura */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.2em;
+}
+
+.restaurant-item p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+/* Corpo da página com margens laterais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #bdf6f8;
+    color: #fff;
+    padding: 1.2em 2em; /* Reduzindo o padding para diminuir a altura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Menu styles */
+header nav {
+    display: flex;
+    justify-content: flex-start; /* Alinha o menu à esquerda */
+    flex-grow: 1;
+    margin-left: 3em; /* Empurra o menu para a direita */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav a {
+    color: #3a7267;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header .login-btn {
+    background: #fff;
+    color: #3a7267;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .login-btn:hover {
+    background: #3a7267;
+    color: #fff;
+}
+
+/* Modificação para afastar o botão "Deixe sua Opinião" do botão de Login */
+header .deixe-opiniao {
+    margin-right: 1em; /* Afastando um pouco o botão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5em;
+    }
+
+    header .logo {
+        width: 120px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .restaurant-list {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #bdf6f8;
+    color: #3a7267;
+}
+
+footer nav {
+    margin-top: 1em;
+}
+
+footer a {
+    color: #3a7267;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
