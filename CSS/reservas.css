@@ -1,0 +1,179 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #bdf6f8;
+    color: #fff;
+    padding: 1.5em 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-left: 3em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1.5em;
+}
+
+header nav a {
+    color: #3a7267;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header .login-btn {
+    background: #fff;
+    color: #3a7267;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .login-btn:hover {
+    background: #3a7267;
+    color: #fff;
+}
+
+header .deixe-opiniao {
+    margin-right: 1em;
+}
+
+/* Seção do formulário */
+main {
+    padding: 4em 2em;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da seção de reservas */
+section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #3a7267;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #555;
+    text-align: left;
+}
+
+form select,
+form input {
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+form select:focus,
+form input:focus {
+    border-color: #3a7267;
+}
+
+form button {
+    background-color: #3a7267;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2c5a4d;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #bdf6f8;
+    color: #3a7267;
+}
+
+footer nav {
+    margin-top: 1em;
+}
+
+footer a {
+    color: #3a7267;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
