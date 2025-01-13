@@ -113,7 +113,7 @@
         const slides = document.querySelectorAll("#carouselImages img");
         currentSlide =
           (currentSlide + direction + slides.length) % slides.length;
-        const offset = -currentSlide * 100; // Move para a esquerda
+        const offset = -currentSlide * 100; 
         document.getElementById(
           "carouselImages"
         ).style.transform = `translateX(${offset}%)`;
