@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurantes de Espanha</title>
+    <title>Restaurantes de Portugal</title>
     <link rel="stylesheet" href="../CSS/restaurantespaises.css" />
   </head>
   <body>
@@ -23,35 +23,37 @@
     </header>
 
     <main>
-      <h1>Restaurantes de Espanha</h1>
+      <h1>Restaurantes de Portugal</h1>
 
+      <!-- Filtros -->
       <section class="filters">
         <h2>Filtros</h2>
         <label for="localizacao">Localização:</label>
         <select id="localizacao">
           <option value="todos">Todos</option>
-          <option value="Madrid">Madrid</option>
-          <option value="Barcelona">Barcelona</option>
-          <option value="Sevilla">Sevilla</option>
+          <option value="Algarve">Algarve</option>
+          <option value="Lisboa">Lisboa</option>
+          <option value="Porto">Porto</option>
         </select>
 
         <label for="preco">Preço:</label>
         <select id="preco">
           <option value="todos">Todos</option>
-          <option value="Baixo">Preço Baixo</option>
-          <option value="Médio">Preço Médio</option>
-          <option value="Alto">Preço Alto</option>
+          <option value="baixo">Preço Baixo</option>
+          <option value="médio">Preço Médio</option>
+          <option value="alto">Preço Alto</option>
         </select>
 
         <label for="pontuacao">Pontuação:</label>
         <select id="pontuacao">
           <option value="todas">Todas</option>
-          <option value="Baixa">Baixa</option>
-          <option value="Média">Média</option>
-          <option value="Alta">Alta</option>
+          <option value="baixa">Baixa</option>
+          <option value="média">Média</option>
+          <option value="alta">Alta</option>
         </select>
       </section>
 
+      <!-- Lista de Restaurantes -->
       <section>
         <h2>Lista de Restaurantes</h2>
         <div id="restaurantes-lista"></div>
@@ -68,84 +70,54 @@
     </footer>
 
     <script>
+      // Dados dos restaurantes
       const restaurantes = [
         {
-          nome: "La Cuadra de Salvador",
-          imagem: "../IMAGENS/cuadra5.jpg",
-          localizacao: "Madrid",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/cuadra.html",
+          nome: "Inevitavel",
+          imagem: "../IMAGENS/inevitavel3.jpg",
+          localizacao: "Algarve",
+          preco: "alto",
+          pontuacao: "alta",
+          link: "../HTML/inevitavel.html",
         },
         {
-          nome: "Alborz",
-          imagem: "../IMAGENS/alborz1.jpg",
-          localizacao: "Madrid",
-          preco: "Médio",
-          pontuacao: "Médi",
-          link: "../HTML/alborz.html",
+          nome: "O Charneco",
+          imagem: "../IMAGENS/charneco4.jpg",
+          localizacao: "Algarve",
+          preco: "médio",
+          pontuacao: "média",
+          link: "../HTML/charneco.html",
         },
         {
-          nome: "Desborre",
-          imagem: "../IMAGENS/desborre6.jpg",
-          localizacao: "Madrid",
-          preco: "Médio",
-          pontuacao: "Alta",
-          link: "../HTML/desborre.html",
+          nome: "Loki",
+          imagem: "../IMAGENS/loki2.jpg",
+          localizacao: "Algarve",
+          preco: "baixo",
+          pontuacao: "baixa",
+          link: "../HTML/loki.html",
         },
         {
-          nome: "Zaytun",
-          imagem: "../IMAGENS/zaytun4.jpg",
-          localizacao: "Barcelona",
-          preco: "Médio",
-          pontuacao: "Alta",
-          link: "../HTML/zaytun.html",
+          nome: "Ato Gastronômico",
+          imagem: "../IMAGENS/restaurant2.jpg",
+          localizacao: "Lisboa",
+          preco: "alto",
+          pontuacao: "alta",
+          link: "../HTML/ato_gastronomico.html",
         },
         {
-          nome: "Birika",
-          imagem: "../IMAGENS/birika5.jpg",
-          localizacao: "Barcelona",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/birika.html",
-        },
-        {
-          nome: "The Alchemix - gastro cocktail bar",
-          imagem: "../IMAGENS/alchemix2.jpg",
-          localizacao: "Barcelona",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/alchemix.html",
-        },
-        {
-          nome: "Mokambo - Breakfast & Brunch",
-          imagem: "../IMAGENS/mokambo8.jpg",
-          localizacao: "Sevilla",
-          preco: "Baixo",
-          pontuacao: "Média",
-          link: "../HTML/mokambo.html",
-        },
-        {
-          nome: "La maestria de querencia",
-          imagem: "../IMAGENS/maestria6.jpg",
-          localizacao: "Sevilla",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/maestria.html",
-        },
-        {
-          nome: "Abantal",
-          imagem: "../IMAGENS/abantal1.jpg",
-          localizacao: "Sevilla",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/abantal.html",
+          nome: "Marlene",
+          imagem: "../IMAGENS/restaurant1.jpg",
+          localizacao: "Lisboa",
+          preco: "médio",
+          pontuacao: "média",
+          link: "../HTML/marlene.html",
         },
       ];
 
+      // Função para renderizar os restaurantes
       function renderRestaurantes(lista) {
         const container = document.getElementById("restaurantes-lista");
-        container.innerHTML = ""; 
+        container.innerHTML = ""; // Limpa a lista existente
 
         lista.forEach((restaurante) => {
           const itemHTML = `
@@ -160,6 +132,7 @@
         });
       }
 
+      // Função para filtrar restaurantes
       function filtrarRestaurantes() {
         const localizacao = document.getElementById("localizacao").value;
         const preco = document.getElementById("preco").value;
@@ -177,6 +150,7 @@
         renderRestaurantes(filtrados);
       }
 
+      // Adicionar eventos aos filtros
       document
         .getElementById("localizacao")
         .addEventListener("change", filtrarRestaurantes);
@@ -187,8 +161,8 @@
         .getElementById("pontuacao")
         .addEventListener("change", filtrarRestaurantes);
 
+      // Exibir todos os restaurantes inicialmente
       renderRestaurantes(restaurantes);
     </script>
   </body>
 </html>
-
