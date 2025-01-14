@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurantes De Portugal</title>
+    <title>Restaurantes de Portugal</title>
     <link rel="stylesheet" href="../CSS/restaurantespaises.css" />
   </head>
   <body>
-  <header>
+    <header>
       <a href="../HTML/index.html">
         <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
       </a>
@@ -15,170 +15,49 @@
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
           <li><a href="../HTML/about.html">Sobre</a></li>
-          <li><a href="../HTML/trending.html">Trending</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
-      <a href="../HTML/formulario.html" class="deixe-opiniao"
-        >Deixe sua Opinião</a
-      >
-      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
 
     <main>
-      <!-- Título principal "Restaurantes de Portugal" -->
-      <section>
-        <h2 class="restaurantes-pais">Restaurantes de Portugal</h2>
-      </section>
+      <h1>Restaurantes de Portugal</h1>
 
-      <!-- Filtros -->
-      <section>
+      <section class="filters">
         <h2>Filtros</h2>
-        <label for="filtro">Filtros:</label>
-        <select id="filtro">
-          <option value="crescente">Preço Crescente</option>
-          <option value="decrescente">Preço Decrescente</option>
-          <option value="crescente">Pontuação Crescente</option>
-          <option value="decrescente">Pontuação Decrescente</option>
+        <label for="localizacao">Localização:</label>
+        <select id="localizacao">
+          <option value="todos">Todos</option>
+          <option value="Algarve">Algarve</option>
+          <option value="Lisboa">Lisboa</option>
+          <option value="Porto">Porto</option>
+        </select>
+
+        <label for="preco">Preço:</label>
+        <select id="preco">
+          <option value="todos">Todos</option>
+          <option value="Baixo">Preço Baixo</option>
+          <option value="Médio">Preço Médio</option>
+          <option value="Alto">Preço Alto</option>
+          <option value="Baixo">Preço Baixo</option>
+          <option value="Médio">Preço Médio</option>
+          <option value="Alto">Preço Alto</option>
+        </select>
+
+        <label for="pontuacao">Pontuação:</label>
+        <select id="pontuacao">
+          <option value="todas">Todas</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
         </select>
       </section>
 
-      <!-- Algarve -->
       <section>
-        <h2 class="section-title">
-          Descubra os melhores restaurantes no Algarve
-        </h2>
-        <p>
-          Aqui você encontrará uma lista dos melhores restaurantes no Algarve,
-          com opções para todos os gostos.
-        </p>
-        <div class="restaurant-list" id="restaurant-list-algarve">
-          <div class="restaurant-item">
-            <a href="../HTML/inevitavel.html">
-              <img
-                src="../IMAGENS/inevitavel3.jpg"
-                alt="Inevitavel"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Inevitavel</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/charneco.html">
-              <img
-                src="../IMAGENS/charneco4.jpg"
-                alt="O charneco"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>O charneco</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/loki.html">
-              <img
-                src="../IMAGENS/loki2.jpg"
-                alt="Loki"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Loki</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Lisboa -->
-      <section>
-        <h2 class="section-title">
-          Descubra os melhores restaurantes em Lisboa
-        </h2>
-        <p>
-          Aqui você encontrará uma lista dos melhores restaurantes em Lisboa,
-          com opções para todos os gostos.
-        </p>
-        <div class="restaurant-list" id="restaurant-list-lisboa">
-          <div class="restaurant-item">
-            <a href="../HTML/ato_gastronomico.html">
-              <img
-                src="../IMAGENS/restaurant2.jpg"
-                alt="Ato Gastronômico"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Ato Gastronômico</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/marlene.html">
-              <img
-                src="../IMAGENS/restaurant1.jpg"
-                alt="Marlene"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Marlene</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/ze.html">
-              <img
-                src="../IMAGENS/ze2.jpg"
-                alt="Zé do Cozido"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Zé do Cozido</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Porto -->
-      <section>
-        <h2 class="section-title">
-          Descubra os melhores restaurantes no Porto
-        </h2>
-        <p>
-          Aqui você encontrará uma lista dos melhores restaurantes no Porto, com
-          opções para todos os gostos.
-        </p>
-        <div class="restaurant-list" id="restaurant-list-porto">
-          <div class="restaurant-item">
-            <a href="../HTML/liz.html">
-              <img
-                src="../IMAGENS/restaurant3.jpg"
-                alt="Liz"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Liz</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/loureiro.html">
-              <img
-                src="../IMAGENS/restaurant4.jpg"
-                alt="O Loureiro"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>O Loureiro</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/ladecasa.html">
-              <img
-                src="../IMAGENS/ladecasa2.jpg"
-                alt="LádeCasa"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>LádeCasa</p>
-          </div>
-        </div>
+        <h2>Lista de Restaurantes</h2>
+        <div id="restaurantes-lista"></div>
       </section>
     </main>
 
@@ -192,13 +71,126 @@
     </footer>
 
     <script>
-      // Função para a barra de pesquisa
-      document
-        .querySelector(".search-bar")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          const query = this.querySelector("input").value.toLowerCase().trim();
+      const restaurantes = [
+        {
+          nome: "Inevitavel",
+          imagem: "../IMAGENS/inevitavel3.jpg",
+          localizacao: "Algarve",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/inevitavel.html",
+        },
+        {
+          nome: "O Charneco",
+          imagem: "../IMAGENS/charneco4.jpg",
+          localizacao: "Algarve",
+          preco: "Médio",
+          pontuacao: "Alta",
+          link: "../HTML/charneco.html",
+        },
+        {
+          nome: "Loki",
+          imagem: "../IMAGENS/loki2.jpg",
+          localizacao: "Algarve",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/loki.html",
+        },
+        {
+          nome: "Ato Gastronômico",
+          imagem: "../IMAGENS/restaurant2.jpg",
+          localizacao: "Lisboa",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/ato_gastronomico.html",
+        },
+        {
+          nome: "Marlene",
+          imagem: "../IMAGENS/marlene4.jpg",
+          localizacao: "Lisboa",
+          preco: "Alto",
+          pontuacao: "Média",
+          link: "../HTML/marlene.html",
+        },
+        {
+          nome: "Zé do Cozido",
+          imagem: "../IMAGENS/restaurant1.jpg",
+          localizacao: "Lisboa",
+          preco: "Médio",
+          pontuacao: "Média",
+          link: "../HTML/ze.html",
+        },
+        {
+          nome: "Liz",
+          imagem: "../IMAGENS/liz2.jpg",
+          localizacao: "Porto",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/liz.html",
+        },
+        {
+          nome: "O Loureiro",
+          imagem: "../IMAGENS/loureiro10.jpg",
+          localizacao: "Porto",
+          preco: "Médio",
+          pontuacao: "Média",
+          link: "../HTML/loureiro.html",
+        },
+        {
+          nome: "Lá de Casa",
+          imagem: "../IMAGENS/ladecasa1.jpg",
+          localizacao: "Porto",
+          preco: "Médio",
+          pontuacao: "Alta",
+          link: "../HTML/ladecasa.html",
+        },
+      ];
+
+      function renderRestaurantes(lista) {
+        const container = document.getElementById("restaurantes-lista");
+        container.innerHTML = "";
+
+        lista.forEach((restaurante) => {
+          const itemHTML = `
+            <div class="restaurant-item">
+              <a href="${restaurante.link}">
+                <img src="${restaurante.imagem}" alt="${restaurante.nome}" width="200" height="150">
+              </a>
+              <p>${restaurante.nome}</p>
+            </div>
+          `;
+          container.innerHTML += itemHTML;
         });
+      }
+
+      function filtrarRestaurantes() {
+        const localizacao = document.getElementById("localizacao").value;
+        const preco = document.getElementById("preco").value;
+        const pontuacao = document.getElementById("pontuacao").value;
+
+        const filtrados = restaurantes.filter((restaurante) => {
+          return (
+            (localizacao === "todos" ||
+              restaurante.localizacao === localizacao) &&
+            (preco === "todos" || restaurante.preco === preco) &&
+            (pontuacao === "todas" || restaurante.pontuacao === pontuacao)
+          );
+        });
+
+        renderRestaurantes(filtrados);
+      }
+
+      document
+        .getElementById("localizacao")
+        .addEventListener("change", filtrarRestaurantes);
+      document
+        .getElementById("preco")
+        .addEventListener("change", filtrarRestaurantes);
+      document
+        .getElementById("pontuacao")
+        .addEventListener("change", filtrarRestaurantes);
+
+      renderRestaurantes(restaurantes);
     </script>
   </body>
 </html>

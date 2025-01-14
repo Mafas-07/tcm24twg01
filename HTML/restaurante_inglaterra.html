@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurantes em Inglaterra</title>
+    <title>Restaurantes de Inglaterra</title>
     <link rel="stylesheet" href="../CSS/restaurantespaises.css" />
   </head>
   <body>
-  <header>
+    <header>
       <a href="../HTML/index.html">
         <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
       </a>
@@ -15,170 +15,45 @@
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
           <li><a href="../HTML/about.html">Sobre</a></li>
-          <li><a href="../HTML/trending.html">Trending</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
-      <a href="../HTML/formulario.html" class="deixe-opiniao"
-        >Deixe sua Opinião</a
-      >
-      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
 
     <main>
-      <!-- Título principal "Restaurantes em Inglaterra" -->
-      <section>
-        <h2 class="restaurantes-pais">Restaurantes em Inglaterra</h2>
-      </section>
+      <h1>Restaurantes de Inglaterra</h1>
 
-      <!-- Filtros -->
-      <section>
+      <section class="filters">
         <h2>Filtros</h2>
-        <label for="filtro">Filtros:</label>
-        <select id="filtro">
-          <option value="crescente">Preço Crescente</option>
-          <option value="decrescente">Preço Decrescente</option>
-          <option value="crescente">Pontuação Crescente</option>
-          <option value="decrescente">Pontuação Decrescente</option>
+        <label for="localizacao">Localização:</label>
+        <select id="localizacao">
+          <option value="todos">Todos</option>
+          <option value="Londres">Londres</option>
+          <option value="Manchester">Manchester</option>
+          <option value="Nottingham">Nottingham</option>
+        </select>
+        <label for="preco">Preço:</label>
+        <select id="preco">
+          <option value="todos">Todos</option>
+          <option value="Baixo">Preço Baixo</option>
+          <option value="Médio">Preço Médio</option>
+          <option value="Alto">Preço Alto</option>
+        </select>
+
+        <label for="pontuacao">Pontuação:</label>
+        <select id="pontuacao">
+          <option value="todas">Todas</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
         </select>
       </section>
 
-      <!-- Londres -->
       <section>
-        <h2 class="section-title">
-          Descubra os melhores restaurantes em Londres
-        </h2>
-        <p>
-          Aqui você encontrará uma lista dos melhores restaurantes em Londres,
-          com opções para todos os gostos.
-        </p>
-        <div class="restaurant-list" id="restaurant-list-londres">
-          <div class="restaurant-item">
-            <a href="../HTML/stone.html">
-              <img
-                src="../IMAGENS/stone3.jpg"
-                alt="Stone"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Whittington Stone</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/bolu.html">
-              <img
-                src="../IMAGENS/bolu4.jpg"
-                alt="Bolu"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Bolu</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/muse.html">
-              <img
-                src="../IMAGENS/muse2.jpg"
-                alt="Muse"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Muse</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Manchester -->
-      <section>
-        <h2 class="section-title">
-          Descubra os melhores restaurantes em Manchester
-        </h2>
-        <p>
-          Aqui você encontrará uma lista dos melhores restaurantes em
-          Manchester, com opções para todos os gostos.
-        </p>
-        <div class="restaurant-list" id="restaurant-list-manchester">
-          <div class="restaurant-item">
-            <a href="../HTML/miller.html">
-              <img
-                src="../IMAGENS/miller2.jpg"
-                alt="Miller"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Miller & Carter</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/dakota.html">
-              <img
-                src="../IMAGENS/dakota1.jpg"
-                alt="Dakota"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Dakota</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/ohannes.html">
-              <img
-                src="../IMAGENS/ohannes2.jpg"
-                alt="Ohannes"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Ohannes burger salford</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Nottingham -->
-      <section>
-        <h2 class="section-title">
-          Descubra os melhores restaurantes em Nottingham
-        </h2>
-        <p>
-          Aqui você encontrará uma lista dos melhores restaurantes em
-          Nottingham, com opções para todos os gostos.
-        </p>
-        <div class="restaurant-list" id="restaurant-list-nottingham">
-          <div class="restaurant-item">
-            <a href="../HTML/pizza.html">
-              <img
-                src="../IMAGENS/pizza3.jpg"
-                alt="Pizza"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Pizza triangle nottingham</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/lasani.html">
-              <img
-                src="../IMAGENS/lasani4.jpg"
-                alt="Lasani"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Lasani</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/lovage.html">
-              <img
-                src="../IMAGENS/lovage2.jpg"
-                alt="Lovage"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Lovage by Lee Smith</p>
-          </div>
-        </div>
+        <h2>Lista de Restaurantes</h2>
+        <div id="restaurantes-lista"></div>
       </section>
     </main>
 
@@ -192,13 +67,126 @@
     </footer>
 
     <script>
-      // Função para a barra de pesquisa
-      document
-        .querySelector(".search-bar")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          const query = this.querySelector("input").value.toLowerCase().trim();
+      const restaurantes = [
+        {
+          nome: "Whittington Stone",
+          imagem: "../IMAGENS/stone3.jpg",
+          localizacao: "Londres",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/stone.html",
+        },
+        {
+          nome: "Bolu",
+          imagem: "../IMAGENS/bolu1.jpg",
+          localizacao: "Londres",
+          preco: "Alto",
+          pontuacao: "Média",
+          link: "../HTML/bolu.html",
+        },
+        {
+          nome: "Muse",
+          imagem: "../IMAGENS/muse3.jpg",
+          localizacao: "Londres",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/muse.html",
+        },
+        {
+          nome: "ZaytMiller & Carter",
+          imagem: "../IMAGENS/miller2.jpg",
+          localizacao: "Manchester",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/miller.html",
+        },
+        {
+          nome: "Dakota",
+          imagem: "../IMAGENS/dakota3.jpg",
+          localizacao: "Manchester",
+          preco: "Médio",
+          pontuacao: "Alta",
+          link: "../HTML/dakota.html",
+        },
+        {
+          nome: "Ohannes burger salford",
+          imagem: "../IMAGENS/ohannes3.jpg",
+          localizacao: "Manchester",
+          preco: "Baixo",
+          pontuacao: "Média",
+          link: "../HTML/ohannes.html",
+        },
+        {
+          nome: "Pizza triangle nottingham",
+          imagem: "../IMAGENS/pizza3.jpg",
+          localizacao: "Nottingham",
+          preco: "Médio",
+          pontuacao: "Alta",
+          link: "../HTML/pizza.html",
+        },
+        {
+          nome: "Lasani",
+          imagem: "../IMAGENS/lasani1.jpg",
+          localizacao: "Nottingham",
+          preco: "Médio",
+          pontuacao: "Média",
+          link: "../HTML/lasni.html",
+        },
+        {
+          nome: "Lovage by Lee Smith",
+          imagem: "../IMAGENS/lovage3.jpg",
+          localizacao: "Nottingham",
+          preco: "Alto",
+          pontuacao: "Alta",
+          link: "../HTML/lovage.html",
+        },
+      ];
+
+      function renderRestaurantes(lista) {
+        const container = document.getElementById("restaurantes-lista");
+        container.innerHTML = ""; 
+
+        lista.forEach((restaurante) => {
+          const itemHTML = `
+            <div class="restaurant-item">
+              <a href="${restaurante.link}">
+                <img src="${restaurante.imagem}" alt="${restaurante.nome}" width="200" height="150">
+              </a>
+              <p>${restaurante.nome}</p>
+            </div>
+          `;
+          container.innerHTML += itemHTML;
         });
+      }
+
+      function filtrarRestaurantes() {
+        const localizacao = document.getElementById("localizacao").value;
+        const preco = document.getElementById("preco").value;
+        const pontuacao = document.getElementById("pontuacao").value;
+
+        const filtrados = restaurantes.filter((restaurante) => {
+          return (
+            (localizacao === "todos" ||
+              restaurante.localizacao === localizacao) &&
+            (preco === "todos" || restaurante.preco === preco) &&
+            (pontuacao === "todas" || restaurante.pontuacao === pontuacao)
+          );
+        });
+
+        renderRestaurantes(filtrados);
+      }
+
+      document
+        .getElementById("localizacao")
+        .addEventListener("change", filtrarRestaurantes);
+      document
+        .getElementById("preco")
+        .addEventListener("change", filtrarRestaurantes);
+      document
+        .getElementById("pontuacao")
+        .addEventListener("change", filtrarRestaurantes);
+
+      renderRestaurantes(restaurantes);
     </script>
   </body>
 </html>
