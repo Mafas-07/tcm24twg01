@@ -21,8 +21,7 @@
         </ul>
       </nav>
       <a href="../HTML/formulario.html" class="deixe-opiniao"
-        >Deixe sua Opinião</a
-      >
+        >Registe o seu Restaurante</a>
       <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
     <div class="conteudo">
@@ -123,7 +122,7 @@
         const slides = document.querySelectorAll("#carouselImages img");
         currentSlide =
           (currentSlide + direction + slides.length) % slides.length;
-        const offset = -currentSlide * 100; // Move para a esquerda
+        const offset = -currentSlide * 100; 
         document.getElementById(
           "carouselImages"
         ).style.transform = `translateX(${offset}%)`;
