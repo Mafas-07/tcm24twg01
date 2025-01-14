@@ -3,48 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <title>Dun Liban - Restaurante</title>
-    <style>
-      .carousel {
-        position: relative;
-        max-width: 600px;
-        margin: auto;
-        overflow: hidden;
-      }
-
-      .carousel-images {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
-
-      .carousel-images img {
-        width: 100%;
-        height: auto;
-      }
-
-      .carousel-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.7);
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-      }
-
-      .prev {
-        left: 10px;
-      }
-
-      .next {
-        right: 10px;
-      }
-    </style>
+    <title>Du Liban - Restaurante</title>
+    <link rel="stylesheet" href="../CSS/restauranteindividual.css" />
   </head>
   <body>
     <header>
-      <h1>Du Liban</h1>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
       <nav>
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
@@ -53,60 +19,91 @@
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Registe o seu Restaurante</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
-    <main>
-      <section>
-        <h2>Descrição</h2>
-        <p>Um ótimo lugar para jantar com amigos em Frankfurt.</p>
-        <div class="carousel">
-          <div class="carousel-images" id="carouselImages">
-            <img src="../IMAGENS/liban1.jpg" alt="Liban - Imagem 1" />
-            <img src="../IMAGENS/liban2.jpg" alt="Liban - Imagem 2" />
-            <img src="../IMAGENS/liban3.jpg" alt="Liban - Imagem 3" />
-            <img src="../IMAGENS/liban4.jpg" alt="Liban - Imagem 4" />
-            <img src="../IMAGENS/liban5.jpg" alt="Liban - Imagem 5" />
+    <div class="conteudo">
+      <main>
+        <section class="restaurant-info">
+          <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+              <img src="../IMAGENS/liban1.jpg" alt="Liban - Imagem 1" />
+              <img src="../IMAGENS/liban2.jpg" alt="Liban - Imagem 2" />
+              <img src="../IMAGENS/liban3.jpg" alt="Liban - Imagem 3" />
+              <img src="../IMAGENS/liban4.jpg" alt="Liban - Imagem 4" />
+              <img src="../IMAGENS/liban5.jpg" alt="Liban - Imagem 5" />
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+            <button class="carousel-button next" onclick="moveSlide(1)">
+              &#10095;
+            </button>
           </div>
-          <button class="carousel-button prev" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="carousel-button next" onclick="moveSlide(1)">
-            &#10095;
-          </button>
-        </div>
-        <h2>Localização</h2>
-        <p>Localização: Zimmersmühlenweg 2, 61440 Oberursel (Taunus)</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d257.99397170083!2d8.591821565271102!3d50.1940226266917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0800e8563cc5%3A0xfb1534a598aca578!2sKraftwerk!5e1!3m2!1spt-PT!2sus!4v1736698152410!5m2!1spt-PT!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-      <section>
-        <h2>Faça sua Reserva</h2>
-        <form id="reservaForm">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
+          <div class="restaurant-description">
+            <h2>Du Liban</h2>
+            <p>
+              Um ótimo lugar para jantar com amigos em Frankfurt. Oferecemos
+              pratos deliciosos com uma combinação única de sabores libaneses.
+            </p>
+            <p><strong>Classificação:</strong> 4.7/5</p>
+            <p><strong>Preço médio:</strong> 25€ por pessoa</p>
+            <p><strong>Tipo de Comida:</strong> Libanesa</p>
+            <p>
+              <strong>Endereço:</strong> Zimmersmühlenweg 2, 61440 Oberursel
+              (Taunus)
+            </p>
+          </div>
+        </section>
+        <section class="location-reservation">
+          <div class="location">
+            <h2>Localização</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198120.7863572305!2d-6.9288530985813885!3d38.483838353135596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422c0d60f12657%3A0x3a72c71324b6349d!2sDu%20Liban!5e0!3m2!1spt-PT!2spt!4v1736779724486!5m2!1spt-PT!2spt"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+          <div class="reservation">
+            <h2>Faça sua Reserva</h2>
+            <form id="reservaForm">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
 
-          <label for="data">Data:</label>
-          <input type="date" id="data" name="data" required />
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required />
 
-          <label for="hora">Hora:</label>
-          <input type="time" id="hora" name="hora" required />
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora" required />
 
-          <label for="pessoas">Número de Pessoas:</label>
-          <input type="number" id="pessoas" name="pessoas" min="1" required />
+              <label for="pessoas">Número de Pessoas:</label>
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                required
+              />
 
-          <button type="submit">Reservar</button>
-        </form>
-      </section>
-    </main>
+              <button type="submit">Reservar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer>
-      <address>
-        Contato: <a href="e-mail:eataround@gmail.com">eataround@gmail.com</a>
-      </address>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
 
     <script>
@@ -124,4 +121,5 @@
     </script>
   </body>
 </html>
+
 
