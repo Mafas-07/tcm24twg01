@@ -1,121 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/styles.css">
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Maestria de Querencia - Restaurante</title>
-    <style>
-        .carousel {
-            position: relative;
-            max-width: 600px;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-images img {
-            width: 100%;
-            height: auto;
-        }
-
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.7);
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="../CSS/restauranteindividual.css" />
+  </head>
+  <body>
     <header>
-        <h1>La Maestria de Querencia</h1>
-        <nav>
-            <ul>
-                <li><a href=../HTML/index.html">Início</a></li>
-                <li><a href=../HTML/about.html">Sobre</a></li>
-                <li><a href="../HTML/trending.html">Trending</a></li>
-                <li><a href="../HTML/reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Início</a></li>
+          <li><a href="../HTML/about.html">Sobre</a></li>
+          <li><a href="../HTML/trending.html">Trending</a></li>
+          <li><a href="../HTML/reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Registe o seu Restaurante</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
-    <main>
-        <section>
-            <h2>Descrição</h2>
-            <p>Um ótimo lugar para jantar com amigos em Sevilha.</p>
-            <div class="carousel">
-                <div class="carousel-images" id="carouselImages">
-                    <img src="../IMAGENS/maestria1.jpg" alt="Maestria - Imagem 1">
-                    <img src="../IMAGENS/maestria2.jpg" alt="Maestria- Imagem 2">
-                    <img src="../IMAGENS/maestria3.jpg" alt="Maestria - Imagem 3">
-                    <img src="../IMAGENS/maestria4.jpg" alt="Maestria - Imagem 4">
-                    <img src="../IMAGENS/maestria5.jpg" alt="Maestria - Imagem 5">
-                    <img src="../IMAGENS/maestria6.jpg" alt="Maestria - Imagem 6">
-                    <img src="../IMAGENS/maestria7.jpg" alt="Maestria - Imagem 7">
-                    <img src="../IMAGENS/maestria8.jpg" alt="Maestria - Imagem 8">
-                </div>
-                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="conteudo">
+      <main>
+        <section class="restaurant-info">
+          <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+              <img src="../IMAGENS/maestria1.jpg" alt="Maestria - Imagem 1" />
+              <img src="../IMAGENS/maestria2.jpg" alt="Maestria - Imagem 2" />
+              <img src="../IMAGENS/maestria3.jpg" alt="Maestria - Imagem 3" />
+              <img src="../IMAGENS/maestria4.jpg" alt="Maestria - Imagem 4" />
+              <img src="../IMAGENS/maestria5.jpg" alt="Maestria - Imagem 5" />
+              <img src="../IMAGENS/maestria6.jpg" alt="Maestria - Imagem 6" />
+              <img src="../IMAGENS/maestria7.jpg" alt="Maestria - Imagem 7" />
+              <img src="../IMAGENS/maestria8.jpg" alt="Maestria - Imagem 8" />
             </div>
-            <h2>Localização</h2>
-            <p>Localização: C. Fernández y González, 41001 Sevilla</p>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.255617245358!2d-5.999422316141958!3d37.38777130010974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126dc8991759b5%3A0xe930ec94580e19ab!2sRestaurante%20La%20Maestr%C3%ADa%20de%20Querencia!5e1!3m2!1spt-PT!2sus!4v1736682892255!5m2!1spt-PT!2sus"      
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"></iframe>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+            <button class="carousel-button next" onclick="moveSlide(1)">
+              &#10095;
+            </button>
+          </div>
+          <div class="restaurant-description">
+            <h2>La Maestria de Querencia</h2>
+            <p>
+              Um ótimo lugar para jantar com amigos em Sevilha. Oferecemos
+              pratos deliciosos com uma combinação única de sabores tradicionais
+              espanhóis.
+            </p>
+            <p><strong>Classificação:</strong> 4.8/5</p>
+            <p><strong>Preço médio:</strong> 35€ por pessoa</p>
+            <p><strong>Tipo de Comida:</strong> Espanhola</p>
+            <p>
+              <strong>Endereço:</strong> C. Fernández y González, 41001 Sevilla
+            </p>
+          </div>
         </section>
-        <section>
+        <section class="location-reservation">
+          <div class="location">
+            <h2>Localização</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.255617245358!2d-5.999422316141958!3d37.38777130010974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126dc8991759b5%3A0xe930ec94580e19ab!2sRestaurante%20La%20Maestr%C3%ADa%20de%20Querencia!5e1!3m2!1spt-PT!2sus!4v1736682892255!5m2!1spt-PT!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="reservation">
             <h2>Faça sua Reserva</h2>
             <form id="reservaForm">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="data">Data:</label>
-                <input type="date" id="data" name="data" required>
-                
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora" required>
-                
-                <label for="pessoas">Número de Pessoas:</label>
-                <input type="number" id="pessoas" name="pessoas" min="1" required>
-                
-                <button type="submit">Reservar</button>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required />
+
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora" required />
+
+              <label for="pessoas">Número de Pessoas:</label>
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                required
+              />
+
+              <button type="submit">Reservar</button>
             </form>
+          </div>
         </section>
-    </main>
+      </main>
+    </div>
     <footer>
-        <address>
-            Contato: <a href="e-mail:eataround@gmail.com">eataround@gmail.com</a>
-        </address>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
 
     <script>
-        let currentSlide = 0;
+      let currentSlide = 0;
 
-        function moveSlide(direction) {
-            const slides = document.querySelectorAll('#carouselImages img');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            const offset = -currentSlide * 100; 
-            document.getElementById('carouselImages').style.transform = `translateX(${offset}%)`;
-        }
+      function moveSlide(direction) {
+        const slides = document.querySelectorAll("#carouselImages img");
+        currentSlide =
+          (currentSlide + direction + slides.length) % slides.length;
+        const offset = -currentSlide * 100; 
+        document.getElementById(
+          "carouselImages"
+        ).style.transform = `translateX(${offset}%)`;
+      }
     </script>
-</body>
+  </body>
 </html>
