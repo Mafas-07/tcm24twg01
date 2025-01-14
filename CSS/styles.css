@@ -1,4 +1,4 @@
-
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ header .login-btn:hover {
     color: #fff;
 }
 
-
+/* Footer styles */
 footer {
     text-align: center;
     padding: 1em 0;

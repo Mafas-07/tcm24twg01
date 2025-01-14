@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,41 +20,166 @@
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Deixe sua Opinião</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
 
     <main>
-      <h1>Restaurantes de Espanha</h1>
+      <!-- Título principal "Restaurantes de Espanha" -->
+      <section>
+        <h2 class="restaurantes-pais">Restaurantes de Espanha</h2>
+      </section>
 
-      <section class="filters">
+      <!-- Filtros -->
+      <section>
         <h2>Filtros</h2>
-        <label for="localizacao">Localização:</label>
-        <select id="localizacao">
-          <option value="todos">Todos</option>
-          <option value="Madrid">Madrid</option>
-          <option value="Barcelona">Barcelona</option>
-          <option value="Sevilla">Sevilla</option>
-        </select>
-
-        <label for="preco">Preço:</label>
-        <select id="preco">
-          <option value="todos">Todos</option>
-          <option value="Baixo">Preço Baixo</option>
-          <option value="Médio">Preço Médio</option>
-          <option value="Alto">Preço Alto</option>
-        </select>
-
-        <label for="pontuacao">Pontuação:</label>
-        <select id="pontuacao">
-          <option value="todas">Todas</option>
-          <option value="Baixa">Baixa</option>
-          <option value="Média">Média</option>
-          <option value="Alta">Alta</option>
+        <label for="filtro">Filtros:</label>
+        <select id="filtro">
+          <option value="crescente">Preço Crescente</option>
+          <option value="decrescente">Preço Decrescente</option>
+          <option value="crescente">Pontuação Crescente</option>
+          <option value="decrescente">Pontuação Decrescente</option>
         </select>
       </section>
 
+      <!-- Madrid -->
       <section>
-        <h2>Lista de Restaurantes</h2>
-        <div id="restaurantes-lista"></div>
+        <h2 class="section-title">
+          Descubra os melhores restaurantes em Madrid
+        </h2>
+        <p>
+          Aqui você encontrará uma lista dos melhores restaurantes em Madrid,
+          com opções para todos os gostos.
+        </p>
+        <div class="restaurant-list" id="restaurant-list-madrid">
+          <div class="restaurant-item">
+            <a href="../HTML/cuadra.html">
+              <img
+                src="../IMAGENS/cuadra3.jpg"
+                alt="Cuadra"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>La Cuadra de Salvador</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/alborz.html">
+              <img
+                src="../IMAGENS/alborz4.jpg"
+                alt="Alborz"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Alborz</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/desborre.html">
+              <img
+                src="../IMAGENS/desborre2.jpg"
+                alt="Desborre"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Desborre</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Barcelona -->
+      <section>
+        <h2 class="section-title">
+          Descubra os melhores restaurantes em Barcelona
+        </h2>
+        <p>
+          Aqui você encontrará uma lista dos melhores restaurantes em Barcelona,
+          com opções para todos os gostos.
+        </p>
+        <div class="restaurant-list" id="restaurant-list-barcelona">
+          <div class="restaurant-item">
+            <a href="../HTML/zaytun.html">
+              <img
+                src="../IMAGENS/zaytun2.jpg"
+                alt="Zaytun"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Zaytun</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/birika.html">
+              <img
+                src="../IMAGENS/birika1.jpg"
+                alt="Birika"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Birika</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/alchemix.html">
+              <img
+                src="../IMAGENS/alchemix2.jpg"
+                alt="The alchemix"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>The alchemix - gastro cocktail bar</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sevilha -->
+      <section>
+        <h2 class="section-title">
+          Descubra os melhores restaurantes em Sevilha
+        </h2>
+        <p>
+          Aqui você encontrará uma lista dos melhores restaurantes em Sevilha,
+          com opções para todos os gostos.
+        </p>
+        <div class="restaurant-list" id="restaurant-list-sevilha">
+          <div class="restaurant-item">
+            <a href="../HTML/mokambo.html">
+              <img
+                src="../IMAGENS/mokambo3.jpg"
+                alt="Mokambo"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Mokambo - Breakfast & Brunch</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/maestria.html">
+              <img
+                src="../IMAGENS/maestria4.jpg"
+                alt="Maestria"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>La maestria de querencia</p>
+          </div>
+          <div class="restaurant-item">
+            <a href="../HTML/abantal.html">
+              <img
+                src="../IMAGENS/abantal2.jpg"
+                alt="Abantal"
+                width="200"
+                height="150"
+              />
+            </a>
+            <p>Abantal</p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -66,128 +191,5 @@
         <a href="#">Twitter</a>
       </nav>
     </footer>
-
-    <script>
-      const restaurantes = [
-        {
-          nome: "La Cuadra de Salvador",
-          imagem: "../IMAGENS/cuadra5.jpg",
-          localizacao: "Madrid",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/cuadra.html",
-        },
-        {
-          nome: "Alborz",
-          imagem: "../IMAGENS/alborz1.jpg",
-          localizacao: "Madrid",
-          preco: "Médio",
-          pontuacao: "Média",
-          link: "../HTML/alborz.html",
-        },
-        {
-          nome: "Desborre",
-          imagem: "../IMAGENS/desborre6.jpg",
-          localizacao: "Madrid",
-          preco: "Médio",
-          pontuacao: "Alta",
-          link: "../HTML/desborre.html",
-        },
-        {
-          nome: "Zaytun",
-          imagem: "../IMAGENS/zaytun4.jpg",
-          localizacao: "Barcelona",
-          preco: "Médio",
-          pontuacao: "Alta",
-          link: "../HTML/zaytun.html",
-        },
-        {
-          nome: "Birika",
-          imagem: "../IMAGENS/birika5.jpg",
-          localizacao: "Barcelona",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/birika.html",
-        },
-        {
-          nome: "The Alchemix - gastro cocktail bar",
-          imagem: "../IMAGENS/alchemix2.jpg",
-          localizacao: "Barcelona",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/alchemix.html",
-        },
-        {
-          nome: "Mokambo - Breakfast & Brunch",
-          imagem: "../IMAGENS/mokambo8.jpg",
-          localizacao: "Sevilla",
-          preco: "Baixo",
-          pontuacao: "Média",
-          link: "../HTML/mokambo.html",
-        },
-        {
-          nome: "La maestria de querencia",
-          imagem: "../IMAGENS/maestria6.jpg",
-          localizacao: "Sevilla",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/maestria.html",
-        },
-        {
-          nome: "Abantal",
-          imagem: "../IMAGENS/abantal1.jpg",
-          localizacao: "Sevilla",
-          preco: "Alto",
-          pontuacao: "Alta",
-          link: "../HTML/abantal.html",
-        },
-      ];
-
-      function renderRestaurantes(lista) {
-        const container = document.getElementById("restaurantes-lista");
-        container.innerHTML = ""; 
-
-        lista.forEach((restaurante) => {
-          const itemHTML = `
-            <div class="restaurant-item">
-              <a href="${restaurante.link}">
-                <img src="${restaurante.imagem}" alt="${restaurante.nome}" width="200" height="150">
-              </a>
-              <p>${restaurante.nome}</p>
-            </div>
-          `;
-          container.innerHTML += itemHTML;
-        });
-      }
-
-      function filtrarRestaurantes() {
-        const localizacao = document.getElementById("localizacao").value;
-        const preco = document.getElementById("preco").value;
-        const pontuacao = document.getElementById("pontuacao").value;
-
-        const filtrados = restaurantes.filter((restaurante) => {
-          return (
-            (localizacao === "todos" ||
-              restaurante.localizacao === localizacao) &&
-            (preco === "todos" || restaurante.preco === preco) &&
-            (pontuacao === "todas" || restaurante.pontuacao === pontuacao)
-          );
-        });
-
-        renderRestaurantes(filtrados);
-      }
-
-      document
-        .getElementById("localizacao")
-        .addEventListener("change", filtrarRestaurantes);
-      document
-        .getElementById("preco")
-        .addEventListener("change", filtrarRestaurantes);
-      document
-        .getElementById("pontuacao")
-        .addEventListener("change", filtrarRestaurantes);
-
-      renderRestaurantes(restaurantes);
-    </script>
   </body>
 </html>

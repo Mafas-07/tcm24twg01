@@ -1,27 +1,68 @@
-<!DOCTYE html>
-<html lang="pt-pt">
+<!DOCTYPE html>
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Eat Around</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/login.css" />
   </head>
   <body>
     <header>
-      <h1>Login</h1>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Início</a></li>
+          <li><a href="../HTML/about.html">Sobre</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
+          <li><a href="../HTML/reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Deixe sua Opinião</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
+
     <main>
-      <form class="login-form">
-        <input type="text" placeholder="Username" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-      </form>
-      <p>
-        <a href="../HTML/index.html" class="back-link"> Voltar para a página inicial</a>
-      </p>
+      <section class="login-form">
+        <h2>Bem-vindo ao Eat Around</h2>
+        <form>
+          <div class="input-container">
+            <input type="text" placeholder="Username" required />
+          </div>
+          <div class="input-container">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+        <p>
+          <a href="../HTML/index.html" class="back-link"
+            >Voltar para a página inicial</a
+          >
+        </p>
+      </section>
     </main>
+
     <footer>
       <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
+
+    <script>
+      // Função para a barra de pesquisa
+      document
+        .querySelector(".search-bar")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const query = this.querySelector("input").value.toLowerCase().trim();
+        });
+    </script>
   </body>
 </html>

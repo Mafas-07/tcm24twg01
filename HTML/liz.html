@@ -1,117 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/restauranteindividual.css" />
     <title>Liz - Restaurante</title>
-    <style>
-      .carousel {
-        position: relative;
-        max-width: 600px;
-        margin: auto;
-        overflow: hidden;
-      }
-
-      .carousel-images {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
-
-      .carousel-images img {
-        width: 100%;
-        height: auto;
-      }
-
-      .carousel-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.7);
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-      }
-
-      .prev {
-        left: 10px;
-      }
-
-      .next {
-        right: 10px;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <h1>Liz</h1>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
       <nav>
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
           <li><a href="../HTML/about.html">Sobre</a></li>
-          <li><a href="../HTML/trending.html">Trending</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Deixe sua Opinião</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
-    <main>
-      <section>
-        <h2>Descrição</h2>
-        <p>Um ótimo lugar para jantar com amigos no Porto.</p>
-        <div class="carousel">
-          <div class="carousel-images" id="carouselImages">
-            <img src="../IMAGENS/liz1.jpg" alt="Liz - Imagem 1" />
-            <img src="../IMAGENS/liz2.jpg" alt="Liz - Imagem 2" />
-            <img src="../IMAGENS/liz3.jpg" alt="Liz - Imagem 3" />
-            <img src="../IMAGENS/liz4.jpg" alt="Liz - Imagem 4" />
-            <img src="../IMAGENS/liz5.jpg" alt="Liz - Imagem 5" />
-            <img src="../IMAGENS/liz6.jpg" alt="Liz - Imagem 6" />
-            <img src="../IMAGENS/liz7.jpg" alt="Liz - Imagem 7" />
-            <img src="../IMAGENS/liz8.jpg" alt="Liz - Imagem 8" />
-            <img src="../IMAGENS/liz9.jpg" alt="Liz - Imagem 9" />
-            <img src="../IMAGENS/liz10.jpg" alt="Liz - Imagem 10" />
+    <div class="conteudo">
+      <main>
+        <section class="restaurant-info">
+          <!-- Carrossel de imagens -->
+          <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+              <img src="../IMAGENS/liz1.jpg" alt="Liz - Imagem 1" />
+              <img src="../IMAGENS/liz2.jpg" alt="Liz - Imagem 2" />
+              <img src="../IMAGENS/liz3.jpg" alt="Liz - Imagem 3" />
+              <img src="../IMAGENS/liz4.jpg" alt="Liz - Imagem 4" />
+              <img src="../IMAGENS/liz5.jpg" alt="Liz - Imagem 5" />
+              <img src="../IMAGENS/liz6.jpg" alt="Liz - Imagem 6" />
+              <img src="../IMAGENS/liz7.jpg" alt="Liz - Imagem 7" />
+              <img src="../IMAGENS/liz8.jpg" alt="Liz - Imagem 8" />
+              <img src="../IMAGENS/liz9.jpg" alt="Liz - Imagem 9" />
+              <img src="../IMAGENS/liz10.jpg" alt="Liz - Imagem 10" />
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+            <button class="carousel-button next" onclick="moveSlide(1)">
+              &#10095;
+            </button>
           </div>
-          <button class="carousel-button prev" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="carousel-button next" onclick="moveSlide(1)">
-            &#10095;
-          </button>
-        </div>
-        <h2>Localização</h2>
-        <p>Localização: R. de Mota Pinto 170, 4100-452 Porto</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.192901898942!2d-8.654354024093248!3d41.166871771328786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246528073dbb5b%3A0x79427e413768f272!2sLiz!5e1!3m2!1spt-PT!2sus!4v1736633616645!5m2!1spt-PT!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-      <section>
-        <h2>Faça sua Reserva</h2>
-        <form id="reservaForm">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
 
-          <label for="data">Data:</label>
-          <input type="date" id="data" name="data" required />
+          <!-- Descrição do restaurante -->
+          <div class="restaurant-description">
+            <h2>Liz</h2>
+            <p>
+              Um ótimo lugar para jantar com amigos no Porto. Oferecemos pratos
+              deliciosos com uma mistura de sabores tradicionais e modernos.
+            </p>
+            <p><strong>Classificação:</strong> 4.7/5</p>
+            <p><strong>Preço médio:</strong> 35€ por pessoa</p>
+            <p><strong>Tipo de Comida:</strong> Portuguesa</p>
+            <p>
+              <strong>Endereço:</strong> R. de Mota Pinto 170, 4100-452, Porto
+            </p>
+          </div>
+        </section>
 
-          <label for="hora">Hora:</label>
-          <input type="time" id="hora" name="hora" required />
+        <!-- Localização e Reserva -->
+        <section class="location-reservation">
+          <!-- Mapa de localização -->
+          <div class="location">
+            <h2>Localização</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.192901898942!2d-8.654354024093248!3d41.166871771328786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246528073dbb5b%3A0x79427e413768f272!2sLiz!5e1!3m2!1spt-PT!2sus!4v1736633616645!5m2!1spt-PT!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
 
-          <label for="pessoas">Número de Pessoas:</label>
-          <input type="number" id="pessoas" name="pessoas" min="1" required />
+          <!-- Formulário de reserva -->
+          <div class="reservation">
+            <h2>Faça sua Reserva</h2>
+            <form id="reservaForm">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
 
-          <button type="submit">Reservar</button>
-        </form>
-      </section>
-    </main>
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required />
+
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora" required />
+
+              <label for="pessoas">Número de Pessoas:</label>
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                required
+              />
+
+              <button type="submit">Reservar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer>
-      <address>
-        Contato: <a href="e-mail:eataround@gmail.com">eataround@gmail.com</a>
-      </address>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
 
     <script>
@@ -121,7 +125,7 @@
         const slides = document.querySelectorAll("#carouselImages img");
         currentSlide =
           (currentSlide + direction + slides.length) % slides.length;
-        const offset = -currentSlide * 100;
+        const offset = -currentSlide * 100; // Move para a esquerda
         document.getElementById(
           "carouselImages"
         ).style.transform = `translateX(${offset}%)`;
@@ -129,4 +133,3 @@
     </script>
   </body>
 </html>
-

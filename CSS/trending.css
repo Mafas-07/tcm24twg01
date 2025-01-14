@@ -1,11 +1,11 @@
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Corpo */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -83,12 +83,12 @@ header .deixe-opiniao {
     margin-right: 1em;
 }
 
-
+/* Conteúdo principal */
 main {
     padding: 2em 1em;
 }
 
-
+/* Estilo para a tabela */
 .restaurant-table {
     width: 100%;
     margin-top: 2em;
@@ -115,7 +115,7 @@ main {
     text-decoration: underline;
 }
 
-
+/* Estilo para a seção de informações */
 .restaurant-info {
     margin-top: 3em;
     text-align: left;

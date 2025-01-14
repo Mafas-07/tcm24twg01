@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abantal - Restaurante</title>
-    <link rel="stylesheet" href="../CSS/restauranteindividual.css"  />
-  </head>  
+    <link rel="stylesheet" href="../CSS/restauranteindividual.css" />
+  </head>
   <body>
     <header>
       <a href="../HTML/index.html">
         <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
-      </a> 
+      </a>
       <nav>
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
           <li><a href="../HTML/about.html">Sobre</a></li>
-          <li><a href="../HTML/trending.html">Trending</a></li>
+          <li><a href="../HTML/services.html">Serviços</a></li>
+          <li><a href="../HTML/contact.html">Contato</a></li>
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
       <a href="../HTML/formulario.html" class="deixe-opiniao"
-        >Deixe sua Opinião</a>
+        >Deixe sua Opinião</a
+      >
       <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
     <div class="conteudo">
       <main>
         <section class="restaurant-info">
+          <!-- Carrossel de imagens -->
           <div class="carousel">
             <div class="carousel-images" id="carouselImages">
               <img src="../IMAGENS/abantal1.jpg" alt="Abantal - Imagem 1" />
@@ -41,6 +44,8 @@
               &#10095;
             </button>
           </div>
+
+          <!-- Descrição do restaurante -->
           <div class="restaurant-description">
             <h2>Abantal</h2>
             <p>
@@ -56,8 +61,10 @@
             </p>
           </div>
         </section>
-        
+
+        <!-- Localização e Reserva -->
         <section class="location-reservation">
+          <!-- Mapa de localização -->
           <div class="location">
             <h2>Localização</h2>
             <iframe
@@ -69,28 +76,29 @@
               loading="lazy"
             ></iframe>
           </div>
-          
+
+          <!-- Formulário de reserva -->
           <div class="reservation">
             <h2>Faça sua Reserva</h2>
             <form id="reservaForm">
               <label for="nome">Nome:</label>
               <input type="text" id="nome" name="nome" required />
-    
+
               <label for="data">Data:</label>
               <input type="date" id="data" name="data" required />
-    
+
               <label for="hora">Hora:</label>
               <input type="time" id="hora" name="hora" required />
-    
+
               <label for="pessoas">Número de Pessoas:</label>
-              <input 
-                type="number" 
-                id="pessoas" 
-                name="pessoas" 
-                min="1" 
-                required 
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                required
               />
-  
+
               <button type="submit">Reservar</button>
             </form>
           </div>
@@ -105,7 +113,7 @@
         <a href="#">Twitter</a>
       </nav>
     </footer>
-  
+
     <script>
       let currentSlide = 0;
 
@@ -113,7 +121,7 @@
         const slides = document.querySelectorAll("#carouselImages img");
         currentSlide =
           (currentSlide + direction + slides.length) % slides.length;
-        const offset = -currentSlide * 100;
+        const offset = -currentSlide * 100; // Move para a esquerda
         document.getElementById(
           "carouselImages"
         ).style.transform = `translateX(${offset}%)`;
@@ -121,4 +129,3 @@
     </script>
   </body>
 </html>
-

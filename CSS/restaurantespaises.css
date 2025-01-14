@@ -8,7 +8,7 @@ body {
     text-align: center; /* Centraliza o texto de forma geral */
 }
 
-
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -75,21 +75,22 @@ header .deixe-opiniao {
     margin-right: 1em;
 }
 
-
+/* Título principal "Restaurantes de Portugal" */
 .restaurantes-pais {
     font-size: 2.8em;
     font-weight: bold;
     color: #3a7267;
-    margin-bottom: 0.8em; 
+    margin-bottom: 0.8em; /* Reduz o espaço após o título */
     text-align: center;
 }
 
+/* Filtros */
 section h2 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
 
-
+/* Títulos menores (Algarve, Lisboa, Porto) */
 .section-title {
     font-size: 1.6em;
     font-weight: bold;
@@ -97,7 +98,7 @@ section h2 {
     margin-bottom: 1em;
 }
 
-
+/* Hero section styles */
 .hero {
     text-align: center;
     padding: 4em 2em;
@@ -111,7 +112,7 @@ section h2 {
     font-weight: 600;
 }
 
-
+/* Popular restaurants section styles */
 .popular-restaurants {
     padding: 4em 2em;
     background: #f9f9f9;
@@ -184,7 +185,7 @@ section h2 {
     }
 }
 
-
+/* Footer styles */
 footer {
     text-align: center;
     padding: 2em 0;

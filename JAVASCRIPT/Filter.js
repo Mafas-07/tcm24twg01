@@ -5,6 +5,7 @@ function Filter() {
     <div>
       <h2>Filtros</h2>
       <input type="text" placeholder="Pesquisar por nome" />
+      {/* Adicione mais filtros conforme necessário */}
     </div>
   );
 }

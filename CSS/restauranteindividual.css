@@ -7,7 +7,9 @@ body {
   color: #333;
   margin: 0;
 }
+/* Body styles */
 
+/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -26,9 +28,9 @@ header .logo {
 /* Menu styles */
 header nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Alinha o menu à esquerda */
   flex-grow: 1;
-  margin-left: 3em; 
+  margin-left: 3em; /* Empurra o menu para a direita */
 }
 
 header nav ul {
@@ -71,23 +73,23 @@ header .login-btn:hover {
   color: #fff;
 }
 
-
+/* Modificação para afastar o botão "Deixe sua Opinião" do botão de Login */
 header .deixe-opiniao {
-  margin-right: 1em; 
+  margin-right: 1em; /* Afastando um pouco o botão */
 }
- 
+ /* Corpo da página com margens laterais */
  .conteudo {
   margin-left: 300px;
   margin-right: 300px;
 }
-
+  /* Estilos para o carrossel */
   .carousel {
     position: relative;
     max-width: 700px;
     max-height: 600px; 
     width: 100%;
     overflow: hidden;
-    margin: 0 auto; 
+    margin: 0 auto; /* Centraliza o carrossel */
   }
   
   .carousel-images {
@@ -118,13 +120,13 @@ header .deixe-opiniao {
     right: 10px;
   }
   
-
+  /* Layout do restaurante */
   .restaurant-info {
     display: flex;
     gap: 20px;
     align-items: flex-start;
     margin-top: 40px;
-    justify-content: center; 
+    justify-content: center; /* Centraliza o conteúdo */
   }
   
   .restaurant-description {
@@ -133,7 +135,7 @@ header .deixe-opiniao {
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
-    margin: 0 auto; 
+    margin: 0 auto; /* Centraliza a caixa de descrição */
   }
   
   .restaurant-description h2 {
@@ -147,12 +149,12 @@ header .deixe-opiniao {
     margin-bottom: 1em;
   }
   
-  
+  /* Localização e Reserva */
   .location-reservation {
     display: flex;
     gap: 20px;
     margin-top: 40px;
-    justify-content: center; 
+    justify-content: center; /* Centraliza o conteúdo */
   }
   
   .location, .reservation {
@@ -162,7 +164,7 @@ header .deixe-opiniao {
     border-radius: 8px;
   }
   
-  
+  /* Estilos do formulário de reserva */
   #reservaForm label {
     display: block;
     margin-bottom: 8px;
@@ -189,7 +191,7 @@ header .deixe-opiniao {
     background-color: #2c5c4f;
   }
   
-  
+  /* Cabeçalho - Sem margem lateral */
   header {
     display: flex;
     justify-content: space-between;
@@ -197,7 +199,7 @@ header .deixe-opiniao {
     background: #bdf6f8;
     color: #fff;
     padding: 1em;
-    width: 100%; 
+    width: 100%; /* Garantir que o cabeçalho ocupe toda a largura */
     position: relative;
   }
   
@@ -210,7 +212,7 @@ header .deixe-opiniao {
   }
   
   
-
+/* Footer styles */
 footer {
   text-align: center;
   padding: 2em 0;
@@ -234,7 +236,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
+/* Responsividade */
 @media (max-width: 768px) {
   header {
       flex-direction: column;

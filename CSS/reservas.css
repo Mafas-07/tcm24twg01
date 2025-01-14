@@ -1,11 +1,11 @@
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Corpo */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-
+/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@ header .deixe-opiniao {
     margin-right: 1em;
 }
 
-
+/* Seção do formulário */
 main {
     padding: 4em 2em;
     background-color: #f9f9f9;
@@ -101,7 +101,7 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Título da seção de reservas */
 section h2 {
     font-size: 2.5em;
     font-weight: bold;
@@ -110,6 +110,7 @@ section h2 {
     text-align: center;
 }
 
+/* Estilos para o formulário */
 form {
     display: flex;
     flex-direction: column;

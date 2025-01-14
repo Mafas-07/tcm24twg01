@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Carregar os dados do XML
     fetch('xml/data.xml')
         .then(response => response.text())
         .then(data => {
@@ -7,8 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const restaurants = xmlDoc.getElementsByTagName("restaurante");
             const restaurantList = document.getElementById("restaurant-list");
 
+            // Função para exibir restaurantes
             function displayRestaurants(restaurants) {
-                restaurantList.innerHTML = ''; 
+                restaurantList.innerHTML = ''; // Limpa a lista atual
                 for (let i = 0; i < restaurants.length; i++) {
                     const name = restaurants[i].getElementsByTagName("nome")[0].textContent;
                     const location = restaurants[i].getElementsByTagName("localizacao")[0].textContent;
@@ -29,17 +31,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
+            // Exibir todos os restaurantes inicialmente
             displayRestaurants(restaurants);
 
+            // Filtros
             const precoSelect = document.getElementById("preco");
             const pontuacaoSelect = document.getElementById("pontuacao");
 
+            // Função para filtrar restaurantes
             function filterRestaurants() {
                 const selectedPrice = precoSelect.value;
                 const selectedRating = pontuacaoSelect.value;
 
                 let filteredRestaurants = Array.from(restaurants);
 
+                // Filtrar por preço
                 if (selectedPrice === "crescente") {
                     filteredRestaurants.sort((a, b) => {
                         return parseFloat(a.getElementsByTagName("preco")[0].textContent) - parseFloat(b.getElementsByTagName("preco")[0].textContent);
@@ -50,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                 }
 
+                // Filtrar por pontuação
                 if (selectedRating === "crescente") {
                     filteredRestaurants.sort((a, b) => {
                         return parseFloat(a.getElementsByTagName("pontuacao")[0].textContent) - parseFloat(b.getElementsByTagName("pontuacao")[0].textContent);
@@ -60,9 +67,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                 }
 
+                // Exibir restaurantes filtrados
                 displayRestaurants(filteredRestaurants);
             }
 
+            // Adicionar eventos de mudança aos filtros
             precoSelect.addEventListener("change", filterRestaurants);
             pontuacaoSelect.addEventListener("change", filterRestaurants);
         });
