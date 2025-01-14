@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurantes>
+    <restaurante>
+        <nome>Belcanto</nome>
+        <localizacao>Lisboa</localizacao>
+        <cozinha>Gastronomia Portuguesa</cozinha>
+        <avaliacao>Michelin 2 estrelas</avaliacao>
+    </restaurante>
+    <restaurante>
+        <nome>Alma</nome>
+        <localizacao>Lisboa</localizacao>
+        <cozinha>Gastronomia Portuguesa</cozinha>
+        <avaliacao>Michelin 1 estrela</avaliacao>
+    </restaurante>
+    <restaurante>
+        <nome>Ode Porto Wine House</nome>
+        <localizacao>Porto</localizacao>
+        <cozinha>Gastronomia Portuguesa</cozinha>
+        <avaliacao>Michelin 1 estrela</avaliacao>
+    </restaurante>
+    <restaurante>
+        <nome>Feitoria</nome>
+        <localizacao>Lisboa</localizacao>
+        <cozinha>Gastronomia Portuguesa</cozinha>
+        <avaliacao>Michelin 1 estrela</avaliacao>
+    </restaurante>
+    <restaurante>
+        <nome>Casa da Calçada</nome>
+        <localizacao>Amarante</localizacao>
+        <cozinha>Gastronomia Portuguesa</cozinha>
+        <avaliacao>Michelin 1 estrela</avaliacao>
+    </restaurante>
+</restaurantes>
