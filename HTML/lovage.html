@@ -1,50 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
     <title>Lovage by Lee Smith - Restaurante</title>
-    <style>
-      .carousel {
-        position: relative;
-        max-width: 600px;
-        margin: auto;
-        overflow: hidden;
-      }
-
-      .carousel-images {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
-
-      .carousel-images img {
-        width: 100%;
-        height: auto;
-      }
-
-      .carousel-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.7);
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-      }
-
-      .prev {
-        left: 10px;
-      }
-
-      .next {
-        right: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="../CSS/restauranteindividual.css" />
   </head>
   <body>
     <header>
-      <h1>Lovage by Lee Smith</h1>
+      <a href="../HTML/index.html">
+        <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
+      </a>
       <nav>
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
@@ -53,61 +19,90 @@
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
+      <a href="../HTML/formulario.html" class="deixe-opiniao"
+        >Registe o seu Restaurante</a
+      >
+      <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
-    <main>
-      <section>
-        <h2>Descrição</h2>
-        <p>Um ótimo lugar para jantar com amigos em Nottingham .</p>
-        <div class="carousel">
-          <div class="carousel-images" id="carouselImages">
-            <img src="../IMAGENS/lovage1.jpg" alt="Lovage - Imagem 1" />
-            <img src="../IMAGENS/lovage2.jpg" alt="Lovage - Imagem 2" />
-            <img src="../IMAGENS/lovage3.jpg" alt="Lovage - Imagem 3" />
-            <img src="../IMAGENS/lovage4.jpg" alt="Lovage - Imagem 4" />
-            <img src="../IMAGENS/lovage5.jpg" alt="Lovage - Imagem 5" />
-            <img src="../IMAGENS/lovage6.jpg" alt="Lovage - Imagem 6" />
+
+    <div class="conteudo">
+      <main>
+        <section class="restaurant-info">
+          <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+              <img src="../IMAGENS/lovage1.jpg" alt="Lovage - Imagem 1" />
+              <img src="../IMAGENS/lovage2.jpg" alt="Lovage - Imagem 2" />
+              <img src="../IMAGENS/lovage3.jpg" alt="Lovage - Imagem 3" />
+              <img src="../IMAGENS/lovage4.jpg" alt="Lovage - Imagem 4" />
+              <img src="../IMAGENS/lovage5.jpg" alt="Lovage - Imagem 5" />
+              <img src="../IMAGENS/lovage6.jpg" alt="Lovage - Imagem 6" />
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">
+              &#10094;
+            </button>
+            <button class="carousel-button next" onclick="moveSlide(1)">
+              &#10095;
+            </button>
           </div>
-          <button class="carousel-button prev" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="carousel-button next" onclick="moveSlide(1)">
-            &#10095;
-          </button>
-        </div>
-        <h2>Localização</h2>
-        <p>Localização: Bath Street, DE45 1DS Bakewell</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.32414652317007!2d-1.674164540827671!3d53.214201399834444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a29dfbdd2c739%3A0x24756844a8a9af76!2sRestaurant%20Lovage%20by%20Lee%20Smith!5e1!3m2!1spt-PT!2sus!4v1736692839221!5m2!1spt-PT!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-      <section>
-        <h2>Faça sua Reserva</h2>
-        <form id="reservaForm">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
+          <div class="restaurant-description">
+            <h2>Lovage by Lee Smith</h2>
+            <p>
+              Um ótimo lugar para jantar com amigos em Nottingham, oferecendo
+              pratos refinados e um ambiente acolhedor.
+            </p>
+            <p><strong>Classificação:</strong> 4.8/5</p>
+            <p><strong>Preço médio:</strong> £45 por pessoa</p>
+            <p><strong>Tipo de Comida:</strong> Fine Dining</p>
+            <p><strong>Endereço:</strong> Bath Street, DE45 1DS Bakewell</p>
+          </div>
+        </section>
+        <section class="location-reservation">
+          <div class="location">
+            <h2>Localização</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.32414652317007!2d-1.674164540827671!3d53.214201399834444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a29dfbdd2c739%3A0x24756844a8a9af76!2sRestaurant%20Lovage%20by%20Lee%20Smith!5e1!3m2!1spt-PT!2sus!4v1736692839221!5m2!1spt-PT!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="reservation">
+            <h2>Faça sua Reserva</h2>
+            <form id="reservaForm">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
 
-          <label for="data">Data:</label>
-          <input type="date" id="data" name="data" required />
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required />
 
-          <label for="hora">Hora:</label>
-          <input type="time" id="hora" name="hora" required />
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora" required />
 
-          <label for="pessoas">Número de Pessoas:</label>
-          <input type="number" id="pessoas" name="pessoas" min="1" required />
+              <label for="pessoas">Número de Pessoas:</label>
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                required
+              />
 
-          <button type="submit">Reservar</button>
-        </form>
-      </section>
-    </main>
+              <button type="submit">Reservar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
     <footer>
-      <address>
-        Contato: <a href="e-mail:eataround@gmail.com">eataround@gmail.com</a>
-      </address>
+      <p>&copy; 2025 Eat Around</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </nav>
     </footer>
 
     <script>
@@ -125,4 +120,5 @@
     </script>
   </body>
 </html>
+
 
