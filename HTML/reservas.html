@@ -98,6 +98,14 @@
         </form>
       </section>
     </main>
+
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <p>A sua reserva foi enviada com sucesso!</p>
+        <button id="closePopup">Fechar</button>
+      </div>
+    </div>
+
     <footer>
       <p>&copy; 2025 Eat Around</p>
       <nav>
@@ -106,6 +114,21 @@
         <a href="#">Twitter</a>
       </nav>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+      const form = document.getElementById("reservaForm");
+      const popup = document.getElementById("popup");
+      const closePopup = document.getElementById("closePopup");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        popup.classList.remove("hidden");
+      });
+
+      closePopup.addEventListener("click", () => {
+        popup.classList.add("hidden");
+        form.reset();
+      });
+    </script>
   </body>
 </html>
