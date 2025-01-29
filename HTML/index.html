@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eat Around - Discover Amazing Restaurants</title>
     <link rel="stylesheet" href="../CSS/index.css" />
-    <link rel="stylesheet" href="../CSS/index.css" />
   </head>
   <body>
     <header>
@@ -16,13 +15,12 @@
         <ul>
           <li><a href="../HTML/index.html">Início</a></li>
           <li><a href="../HTML/about.html">Sobre</a></li>
-          <li><a href="../HTML/services.html">Serviços</a></li>
-          <li><a href="../HTML/contact.html">Contato</a></li>
+          <li><a href="../HTML/trending.html">Trending</a></li>
           <li><a href="../HTML/reservas.html">Reservas</a></li>
         </ul>
       </nav>
       <a href="../HTML/formulario.html" class="deixe-opiniao"
-        >Deixe sua Opinião</a
+        >Registe o seu restaurante</a
       >
       <a href="../HTML/login.html" class="login-btn">Login</a>
     </header>
@@ -150,58 +148,6 @@
             <p>Desborre</p>
           </div>
         </div>
-
-        <div class="titles">
-          <h2>Popular Restaurants in Berlin</h2>
-          <h2>Popular Restaurants in Madrid</h2>
-        </div>
-
-        <div class="restaurant-list">
-          <div class="restaurant-item">
-            <a href="../HTML/oukan.html">
-              <img
-                src="../IMAGENS/oukan1.jpg"
-                alt="Restaurant 1"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Oukan</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/wilde.html">
-              <img
-                src="../IMAGENS/wilde1.jpg"
-                alt="Restaurant 2"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>wilde wiese</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/alborz.html">
-              <img
-                src="../IMAGENS/alborz1.jpg"
-                alt="Restaurant 3"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Alborz</p>
-          </div>
-          <div class="restaurant-item">
-            <a href="../HTML/desborre.html">
-              <img
-                src="../IMAGENS/desborre1.jpg"
-                alt="Restaurant 4"
-                width="200"
-                height="150"
-              />
-            </a>
-            <p>Desborre</p>
-          </div>
-        </div>
       </section>
     </main>
 
@@ -215,14 +161,11 @@
     </footer>
 
     <script>
-      // Função para a barra de pesquisa
       document
         .querySelector(".search-bar")
         .addEventListener("submit", function (event) {
-          event.preventDefault(); // Impede o envio do formulário
-          const query = this.querySelector("input").value.toLowerCase().trim(); // Obtém o valor da pesquisa e converte para minúsculas
-
-          // Verifica o valor da pesquisa e redireciona para a página correspondente
+          event.preventDefault(); 
+          const query = this.querySelector("input").value.toLowerCase().trim(); 
           if (query === "marlene") {
             window.location.href = "marlene.html";
             window.location.href = "marlene.html";
@@ -254,7 +197,6 @@
             window.location.href = "restaurante_lisboa.html";
             window.location.href = "restaurante_lisboa.html";
           } else if (query === "porto") {
-            // Verifique se está em minúsculas
             window.location.href = "restaurante_porto.html";
           } else if (query === "algarve") {
             window.location.href = "restaurante_algarve.html";
