@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurantes>
+    <restaurante>
+        <posicao>1</posicao>
+        <nome>Central</nome>
+        <localizacao>Lima, Peru</localizacao>
+        <premios>12</premios>
+    </restaurante>
+    <restaurante>
+        <posicao>2</posicao>
+        <nome>Disfrutar</nome>
+        <localizacao>Barcelona, Espanha</localizacao>
+        <premios>10</premios>
+    </restaurante>
+    <restaurante>
+        <posicao>3</posicao>
+        <nome>DiverXO</nome>
+        <localizacao>Madrid, Espanha</localizacao>
+        <premios>9</premios>
+    </restaurante>
+</restaurantes>
