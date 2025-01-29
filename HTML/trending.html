@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../CSS/trending.css" />
   </head>
   <body>
-   <header>
+    <header>
       <a href="../HTML/index.html">
         <img src="../IMAGENS/imagem1.png" alt="Logo EatAround" class="logo" />
       </a>
@@ -134,6 +134,22 @@
       </section>
     </main>
 
+    <h1>Top 3 Restaurantes Mais Premiados do Mundo</h1>
+    <table id="restaurant-table">
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Nome</th>
+          <th>Localização</th>
+          <th>Número de Prêmios</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <a href="../XML/top3_restaurantes.xml" download="top3_restaurantes.xml">
+      Baixar o arquivo XML
+    </a>
+
     <footer>
       <p>&copy; 2025 Eat Around</p>
       <nav>
@@ -142,5 +158,40 @@
         <a href="#">Twitter</a>
       </nav>
     </footer>
+
+    <script>
+               document.addEventListener("DOMContentLoaded", function () {
+              // Caminho para o arquivo XML
+              let xhr = new XMLHttpRequest();
+              xhr.open("GET", "./XML/top3_restaurantes.xml", true);
+
+          xhr.onload = function () {
+        if (xhr.status === 200) {
+          let parser = new DOMParser();
+          let xmlDoc = parser.parseFromString(xhr.responseText, "application/xml");
+
+          let restaurantes = xmlDoc.getElementsByTagName("restaurante");
+          let tableBody = document.querySelector("#restaurant-table tbody");
+
+          for (let i = 0; i < restaurantes.length; i++) {
+            let posicao = restaurantes[i].getElementsByTagName("posicao")[0].textContent;
+            let nome = restaurantes[i].getElementsByTagName("nome")[0].textContent;
+            let localizacao = restaurantes[i].getElementsByTagName("localizacao")[0].textContent;
+            let premios = restaurantes[i].getElementsByTagName("premios")[0].textContent;
+
+            let row = document.createElement("tr");
+            row.innerHTML = `
+              <td>${posicao}</td>
+              <td>${nome}</td>
+              <td>${localizacao}</td>
+              <td>${premios}</td>
+            `;
+            tableBody.appendChild(row);
+          }
+        } else {
+          console.error("Erro ao carregar o arquivo XML:", xhr.status, xhr.statusText);
+        }
+      };
+    </script>
   </body>
 </html>
