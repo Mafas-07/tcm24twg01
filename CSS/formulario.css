@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #bdf6f8;
+  color: #fff;
+  padding: 1.5em 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  width: 150px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  margin-left: 3em;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 1.5em;
+}
+
+header nav a {
+  color: #3a7267;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  opacity: 0.8;
+}
+
+header .login-btn {
+  background: #fff;
+  color: #3a7267;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header .login-btn:hover {
+  background: #3a7267;
+  color: #fff;
+}
+
+main {
+      display: flex;
+      justify-content: center;
+      padding: 4em 2em;
+    }
+
+    section {
+      width: 100%;
+      max-width: 1000px; /* Largura máxima aumentada */
+      background: #fff;
+      padding: 3em; /* Maior espaçamento interno */
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      color: #3a7267;
+      margin-bottom: 1.5em;
+      text-align: center;
+    }
+
+    /* Formulário */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .form-row input,
+    .form-row select {
+      flex: 1;
+      padding: 1em; /* Maior preenchimento interno */
+      font-size: 1.2em; /* Aumentei o tamanho da fonte */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-row select {
+      max-width: 120px; /* Tamanho fixo para o campo de código do país */
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #3a7267;
+      outline: none;
+    }
+
+    form button {
+      background-color: #3a7267;
+      color: #fff;
+      border: none;
+      padding: 1.2em;
+      font-size: 1.3em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #2c5a4d;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1em; /* Maior tamanho */
+      color: #555;
+    }
+
+    .checkbox-group input {
+      width: auto;
+    }
+
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+    }
+    
+    .popup.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .popup-content {
+      background-color: white;
+      padding: 2em;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .popup-content p {
+      font-size: 1.5em;
+      margin-bottom: 1.5em;
+      color: #3a7267;
+    }
+    
+    .popup-content button {
+      background-color: #3a7267;
+      color: white;
+      border: none;
+      padding: 0.8em 1.5em;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .popup-content button:hover {
+      background-color: #2c5a4d;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background: #bdf6f8;
+      color: #3a7267;
+    }
