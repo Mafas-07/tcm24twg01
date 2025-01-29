@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/reservas.css" />
-    <title>Reservas</title>
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <title>Registe o seu Restaurante</title>
   </head>
   <body>
     <header>
@@ -26,78 +26,40 @@
     </header>
     <main>
       <section>
-        <h2>Formulário de Reserva</h2>
-        <form id="reservaForm">
-          <label for="restaurante">Escolha o Restaurante:</label>
-          <select id="restaurante" name="restaurante" required>
-            <option value="">Selecione um restaurante</option>
-            <option value="Marlene">Marlene</option>
-            <option value="Ato Gastronomico">Ato Gastronomico</option>
-            <option value="Zé do  Cozido">Zé do Cozido</option>
-            <option value="Liz">Liz</option>
-            <option value="LádeCasa">Ládecasa</option>
-            <option value="O Loureiro">O Loureiro</option>
-            <option value="Inevitável Wine & Cocktail Bar">
-              Inevitável Wine & Cocktail Bar
-            </option>
-            <option value="O Charneco">O Charneco</option>
-            <option value="Loki">Loki</option>
-            <option value="La Cuadra de Salvador">La Cuadra de Salvador</option>
-            <option value="Alborz">Alborz</option>
-            <option value="Desborre">Desborre</option>
-            <option value="Zaytun">Zaytun</option>
-            <option value="Birika">Birika</option>
-            <option value="Birika">Birika</option>
-            <option value="The Alchemix - Gastro Cocktail Bar">
-              The Alchemix - Gastro Cocktail Bar
-            </option>
-            <option value="Mokambo ">Mokambo</option>
-            <option value=" La maestria de querencia">
-              La maestria de querencia
-            </option>
-            <option value="Abantal">Abantal</option>
-            <option value="Whittington Stone">Whittington Stone</option>
-            <option value="Bolu">Bolu</option>
-            <option value="Muse">Muse</option>
-            <option value="Miller & Carter">Miller & Carter</option>
-            <option value="Dakota">Dakota</option>
-            <option value="Ohannes burger salford">
-              Ohannes burger salford
-            </option>
-            <option value="Pizza triangle nottingham">
-              Pizza triangle nottingham
-            </option>
-            <option value="Lasani">Lasani</option>
-            <option value="Lovage by lee smith">Lovage by lee smith</option>
-            <option value="Oukan">Oukan</option>
-            <option value="Il cielo">Il cielo</option>
-            <option value="Wilde wiese">Wilde wiese</option>
-            <option value="Daje München">Daje München</option>
-            <option value="Freisinger hof">Freisinger hof</option>
-            <option value="Pizza verde neuhausen ">
-              Pizza verde neuhausen
-            </option>
-            <option value="Kraftwerk">Kraftwerk</option>
-            <option value="Uzuns">Uzuns</option>
-            <option value="Du liban ">Du liban</option>
+        <h2>Registe o seu Restaurante</h2>
+            <form id="reservaForm" action="#" method="post">
+              <div class="form-group">
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              <input type="text" id="restaurante" name="restaurante" placeholder="Nome do seu Restaurante" required />
+              </div>
+              
+              <input type="email" id="email" name="email" placeholder="E-mail" required/>
+  
+              <div class="form-group">
+              <select id="codigo_pais" name="codigo_pais" required>
+                  <option value="PT">PT +351</option>
+                  <option value="FR">FR +33</option>
+                  <option value="ES">ES +34</option>
+                  <option value="DE">DE +49</option>
+              </select>
+              <input type="tel" id="telefone" name="telefone" required>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" name="opt_out" value="1" />
+                <label for="opt_out">Não desejo receber comunicações do TheFork por e-mail/SMS.</label>
+              </div>
+  
+              <button type="submit">REGISTO</button>   
+            </form>
           </select>
-
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
-
-          <label for="data">Data:</label>
-          <input type="date" id="data" name="data" required />
-
-          <label for="hora">Hora:</label>
-          <input type="time" id="hora" name="hora" required />
-
-          <label for="pessoas">Número de Pessoas:</label>
-          <input type="number" id="pessoas" name="pessoas" min="1" required />
-
-          <button type="submit">Reservar</button>
-        </form>
-      </section>
     </main>
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <p>A sua reserva foi enviada com sucesso!</p>
+        <button id="closePopup">Fechar</button>
+      </div>
+    </div>
     <footer>
       <p>&copy; 2025 Eat Around</p>
       <nav>
@@ -106,6 +68,21 @@
         <a href="#">Twitter</a>
       </nav>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      const form = document.getElementById("reservaForm");
+      const popup = document.getElementById("popup");
+      const closePopup = document.getElementById("closePopup");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); 
+        popup.classList.remove("hidden"); 
+      });
+
+      closePopup.addEventListener("click", () => {
+        popup.classList.add("hidden"); 
+        form.reset(); 
+      });
+    </script>
+   
   </body>
 </html>
