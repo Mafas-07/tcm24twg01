@@ -12,6 +12,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    background-image: url('../IMAGENS/background.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
     color: #333;
     text-align: center;
 }
@@ -88,7 +91,7 @@ main {
     padding: 2em 1em;
 }
 
-/* Estilo para a tabela */
+/* Estilo para a tabela de tendências */
 .restaurant-table {
     width: 100%;
     margin-top: 2em;
@@ -104,6 +107,10 @@ main {
 .restaurant-table th {
     background-color: #3a7267;
     color: #fff;
+}
+
+.restaurant-table td {
+    background-color: #f2f2f2; /* Cor de fundo clara para as células */
 }
 
 .restaurant-table td a {
@@ -139,6 +146,41 @@ main {
 .restaurant-info dt {
     font-weight: bold;
     margin-top: 1.5em;
+}
+
+/* Estilo para a nova tabela de Top 3 Restaurantes */
+#restaurant-table {
+    width: 80%;
+    margin: 3em auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#restaurant-table th, #restaurant-table td {
+    padding: 1.2em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#restaurant-table th {
+    background-color: #3a7267;
+    color: white;
+    font-size: 1.3em;
+}
+
+#restaurant-table td {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* Efeito de hover para as linhas da tabela */
+#restaurant-table tbody tr:hover {
+    background-color: #e0f7f8;
+    transition: 0.3s;
 }
 
 /* Footer styles */
